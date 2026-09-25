@@ -1,0 +1,600 @@
+{
+  "version": 1,
+  "voice": {
+    "Mama": "en-US-Neural2-F",
+    "Girl": "en-US-Neural2-C",
+    "rate": 0.85
+  },
+  "scenes": [
+    {
+      "id": "brushing-teeth",
+      "emoji": "🪥",
+      "title_en": "Brushing Teeth",
+      "title_zh": "刷牙時間",
+      "vocab": [
+        {
+          "en": "toothbrush",
+          "pron": "/ˈtuːθbrʌʃ/",
+          "zh": "牙刷",
+          "ico": "🪥"
+        },
+        {
+          "en": "toothpaste",
+          "pron": "/ˈtuːθpeɪst/",
+          "zh": "牙膏",
+          "ico": "🧴"
+        },
+        {
+          "en": "water",
+          "pron": "/ˈwɔːtər/",
+          "zh": "水",
+          "ico": "💧"
+        },
+        {
+          "en": "teeth",
+          "pron": "/tiːθ/",
+          "zh": "牙齒",
+          "ico": "😁"
+        }
+      ],
+      "dialogue": [
+        {
+          "who": "Mama",
+          "icon": "👩",
+          "en": "Time to brush your teeth!",
+          "zh": "刷牙時間到喇！"
+        },
+        {
+          "who": "Girl",
+          "icon": "👧",
+          "en": "I want my toothbrush, please.",
+          "zh": "我想要我嘅牙刷，唔該。"
+        },
+        {
+          "who": "Mama",
+          "icon": "👩",
+          "en": "Here you go. Brush up and down!",
+          "zh": "俾你。上下咁刷！"
+        },
+        {
+          "who": "Girl",
+          "icon": "👧",
+          "en": "All clean! My teeth are shiny.",
+          "zh": "刷乾淨喇！我啲牙好閃！"
+        }
+      ],
+      "task": "今晚刷牙時，媽媽同女兒用英文對話一次，完成咗就一齊擊掌 ✋"
+    },
+    {
+      "id": "breakfast",
+      "emoji": "🍳",
+      "title_en": "Breakfast Time",
+      "title_zh": "食早餐",
+      "vocab": [
+        {
+          "en": "milk",
+          "pron": "/mɪlk/",
+          "zh": "牛奶",
+          "ico": "🥛"
+        },
+        {
+          "en": "bread",
+          "pron": "/bred/",
+          "zh": "麵包",
+          "ico": "🍞"
+        },
+        {
+          "en": "egg",
+          "pron": "/eɡ/",
+          "zh": "雞蛋",
+          "ico": "🥚"
+        },
+        {
+          "en": "hungry",
+          "pron": "/ˈhʌŋɡri/",
+          "zh": "肚餓",
+          "ico": "😋"
+        }
+      ],
+      "dialogue": [
+        {
+          "who": "Mama",
+          "icon": "👩",
+          "en": "Good morning! Are you hungry?",
+          "zh": "早晨！你肚唔肚餓呀？"
+        },
+        {
+          "who": "Girl",
+          "icon": "👧",
+          "en": "Yes! I want bread and milk.",
+          "zh": "係呀！我想要麵包同牛奶。"
+        },
+        {
+          "who": "Mama",
+          "icon": "👩",
+          "en": "Here is your egg too. Yummy!",
+          "zh": "呢個雞蛋都俾你。好味呀！"
+        },
+        {
+          "who": "Girl",
+          "icon": "👧",
+          "en": "Thank you, Mama! I love breakfast.",
+          "zh": "多謝媽媽！我鍾意食早餐。"
+        }
+      ],
+      "task": "明早食早餐時，女兒試吓用英文講出枱面每樣食物嘅名 🍞🥛🥚"
+    },
+    {
+      "id": "getting-dressed",
+      "emoji": "👕",
+      "title_en": "Getting Dressed",
+      "title_zh": "著衫",
+      "vocab": [
+        {
+          "en": "shirt",
+          "pron": "/ʃɜːrt/",
+          "zh": "上衫",
+          "ico": "👕"
+        },
+        {
+          "en": "pants",
+          "pron": "/pænts/",
+          "zh": "褲",
+          "ico": "👖"
+        },
+        {
+          "en": "socks",
+          "pron": "/sɒks/",
+          "zh": "襪",
+          "ico": "🧦"
+        },
+        {
+          "en": "shoes",
+          "pron": "/ʃuːz/",
+          "zh": "鞋",
+          "ico": "👟"
+        }
+      ],
+      "dialogue": [
+        {
+          "who": "Mama",
+          "icon": "👩",
+          "en": "Let's get dressed! Put on your shirt.",
+          "zh": "我哋著衫喇！著上你件上衫。"
+        },
+        {
+          "who": "Girl",
+          "icon": "👧",
+          "en": "Okay! Where are my socks?",
+          "zh": "好呀！我對襪喺邊度？"
+        },
+        {
+          "who": "Mama",
+          "icon": "👩",
+          "en": "Here. Now your pants and shoes.",
+          "zh": "喺度。而家著褲同鞋。"
+        },
+        {
+          "who": "Girl",
+          "icon": "👧",
+          "en": "I can do it! All by myself!",
+          "zh": "我做到呀！我自己得㗎！"
+        }
+      ],
+      "task": "朝早著衫時，女兒每著一件就用英文講出佢個名 👕👖🧦👟"
+    },
+    {
+      "id": "going-to-school",
+      "emoji": "🎒",
+      "title_en": "Going to School",
+      "title_zh": "返學",
+      "vocab": [
+        {
+          "en": "school",
+          "pron": "/skuːl/",
+          "zh": "學校",
+          "ico": "🏫"
+        },
+        {
+          "en": "bag",
+          "pron": "/bæɡ/",
+          "zh": "書包",
+          "ico": "🎒"
+        },
+        {
+          "en": "teacher",
+          "pron": "/ˈtiːtʃər/",
+          "zh": "老師",
+          "ico": "👩‍🏫"
+        },
+        {
+          "en": "friend",
+          "pron": "/frend/",
+          "zh": "朋友",
+          "ico": "🧑‍🤝‍🧑"
+        }
+      ],
+      "dialogue": [
+        {
+          "who": "Mama",
+          "icon": "👩",
+          "en": "Time for school! Take your bag.",
+          "zh": "返學時間喇！拎埋你個書包。"
+        },
+        {
+          "who": "Girl",
+          "icon": "👧",
+          "en": "I will see my teacher and friends!",
+          "zh": "我會見到我老師同朋友！"
+        },
+        {
+          "who": "Mama",
+          "icon": "👩",
+          "en": "Have a great day! I love you.",
+          "zh": "祝你有開心嘅一日！我愛你。"
+        },
+        {
+          "who": "Girl",
+          "icon": "👧",
+          "en": "Bye bye, Mama! See you later.",
+          "zh": "拜拜媽媽！遲啲見。"
+        }
+      ],
+      "task": "返學前，女兒同媽媽用英文講一次 'Bye bye' 同 'I love you' 🤗"
+    },
+    {
+      "id": "playing-toys",
+      "emoji": "🧸",
+      "title_en": "Playing Toys",
+      "title_zh": "玩玩具",
+      "vocab": [
+        {
+          "en": "toy",
+          "pron": "/tɔɪ/",
+          "zh": "玩具",
+          "ico": "🧸"
+        },
+        {
+          "en": "ball",
+          "pron": "/bɔːl/",
+          "zh": "波",
+          "ico": "⚽"
+        },
+        {
+          "en": "doll",
+          "pron": "/dɒl/",
+          "zh": "公仔",
+          "ico": "🪆"
+        },
+        {
+          "en": "play",
+          "pron": "/pleɪ/",
+          "zh": "玩",
+          "ico": "🎉"
+        }
+      ],
+      "dialogue": [
+        {
+          "who": "Girl",
+          "icon": "👧",
+          "en": "Mama, can we play together?",
+          "zh": "媽媽，我哋可唔可以一齊玩？"
+        },
+        {
+          "who": "Mama",
+          "icon": "👩",
+          "en": "Sure! Which toy do you want?",
+          "zh": "當然得！你想玩邊個玩具？"
+        },
+        {
+          "who": "Girl",
+          "icon": "👧",
+          "en": "I want my doll and the ball!",
+          "zh": "我想要我個公仔同個波！"
+        },
+        {
+          "who": "Mama",
+          "icon": "👩",
+          "en": "Let's play! This is so much fun.",
+          "zh": "我哋玩啦！真係好好玩。"
+        }
+      ],
+      "task": "玩玩具時，女兒用英文講出每件玩具嘅名 🧸⚽🪆"
+    },
+    {
+      "id": "bath-time",
+      "emoji": "🛁",
+      "title_en": "Bath Time",
+      "title_zh": "沖涼",
+      "vocab": [
+        {
+          "en": "bath",
+          "pron": "/bɑːθ/",
+          "zh": "沖涼",
+          "ico": "🛁"
+        },
+        {
+          "en": "soap",
+          "pron": "/səʊp/",
+          "zh": "番梘",
+          "ico": "🧼"
+        },
+        {
+          "en": "towel",
+          "pron": "/ˈtaʊəl/",
+          "zh": "毛巾",
+          "ico": "🧻"
+        },
+        {
+          "en": "warm",
+          "pron": "/wɔːrm/",
+          "zh": "暖",
+          "ico": "♨️"
+        }
+      ],
+      "dialogue": [
+        {
+          "who": "Mama",
+          "icon": "👩",
+          "en": "Bath time! The water is warm.",
+          "zh": "沖涼喇！啲水暖暖哋。"
+        },
+        {
+          "who": "Girl",
+          "icon": "👧",
+          "en": "I like bubbles! Where is the soap?",
+          "zh": "我鍾意泡泡！番梘喺邊度？"
+        },
+        {
+          "who": "Mama",
+          "icon": "👩",
+          "en": "Here. Wash your hands and face.",
+          "zh": "喺度。洗吓你對手同塊面。"
+        },
+        {
+          "who": "Girl",
+          "icon": "👧",
+          "en": "All done! Pass me the towel, please.",
+          "zh": "沖完喇！唔該俾條毛巾我。"
+        }
+      ],
+      "task": "沖涼時，媽媽用英文講 'warm water'、'soap'、'towel'，女兒跟讀 🛁"
+    },
+    {
+      "id": "eating-fruit",
+      "emoji": "🍎",
+      "title_en": "Eating Fruit",
+      "title_zh": "食生果",
+      "vocab": [
+        {
+          "en": "apple",
+          "pron": "/ˈæpl/",
+          "zh": "蘋果",
+          "ico": "🍎"
+        },
+        {
+          "en": "banana",
+          "pron": "/bəˈnɑːnə/",
+          "zh": "香蕉",
+          "ico": "🍌"
+        },
+        {
+          "en": "orange",
+          "pron": "/ˈɒrɪndʒ/",
+          "zh": "橙",
+          "ico": "🍊"
+        },
+        {
+          "en": "sweet",
+          "pron": "/swiːt/",
+          "zh": "甜",
+          "ico": "😊"
+        }
+      ],
+      "dialogue": [
+        {
+          "who": "Mama",
+          "icon": "👩",
+          "en": "Would you like some fruit?",
+          "zh": "你想唔想食啲生果？"
+        },
+        {
+          "who": "Girl",
+          "icon": "👧",
+          "en": "Yes! I want an apple, please.",
+          "zh": "想呀！我想要一個蘋果，唔該。"
+        },
+        {
+          "who": "Mama",
+          "icon": "👩",
+          "en": "Here. It is sweet and yummy.",
+          "zh": "俾你。好甜好好味。"
+        },
+        {
+          "who": "Girl",
+          "icon": "👧",
+          "en": "I love apples and bananas!",
+          "zh": "我鍾意食蘋果同香蕉！"
+        }
+      ],
+      "task": "食生果時，女兒用英文講出生果嘅名同 'It is sweet!' 🍎🍌🍊"
+    },
+    {
+      "id": "at-the-park",
+      "emoji": "🌳",
+      "title_en": "At the Park",
+      "title_zh": "去公園",
+      "vocab": [
+        {
+          "en": "park",
+          "pron": "/pɑːrk/",
+          "zh": "公園",
+          "ico": "🌳"
+        },
+        {
+          "en": "slide",
+          "pron": "/slaɪd/",
+          "zh": "滑梯",
+          "ico": "🛝"
+        },
+        {
+          "en": "swing",
+          "pron": "/swɪŋ/",
+          "zh": "鞦韆",
+          "ico": "🥏"
+        },
+        {
+          "en": "run",
+          "pron": "/rʌn/",
+          "zh": "跑",
+          "ico": "🏃"
+        }
+      ],
+      "dialogue": [
+        {
+          "who": "Girl",
+          "icon": "👧",
+          "en": "Look, Mama! A big slide!",
+          "zh": "睇呀媽媽！好大嘅滑梯！"
+        },
+        {
+          "who": "Mama",
+          "icon": "👩",
+          "en": "Yes! Do you want to play?",
+          "zh": "係呀！你想唔想玩？"
+        },
+        {
+          "who": "Girl",
+          "icon": "👧",
+          "en": "I want the swing first, please.",
+          "zh": "我想先玩鞦韆，唔該。"
+        },
+        {
+          "who": "Mama",
+          "icon": "👩",
+          "en": "Okay! Let's run and have fun!",
+          "zh": "好呀！我哋一齊跑，玩過痛快！"
+        }
+      ],
+      "task": "去公園時，女兒用英文講出玩緊咩：'slide'、'swing'、'run' 🌳🛝"
+    },
+    {
+      "id": "reading-book",
+      "emoji": "📚",
+      "title_en": "Reading a Book",
+      "title_zh": "睇書",
+      "vocab": [
+        {
+          "en": "book",
+          "pron": "/bʊk/",
+          "zh": "書",
+          "ico": "📕"
+        },
+        {
+          "en": "story",
+          "pron": "/ˈstɔːri/",
+          "zh": "故事",
+          "ico": "📖"
+        },
+        {
+          "en": "page",
+          "pron": "/peɪdʒ/",
+          "zh": "頁",
+          "ico": "📄"
+        },
+        {
+          "en": "read",
+          "pron": "/riːd/",
+          "zh": "讀",
+          "ico": "👀"
+        }
+      ],
+      "dialogue": [
+        {
+          "who": "Girl",
+          "icon": "👧",
+          "en": "Mama, can you read me a story?",
+          "zh": "媽媽，可唔可以讀個故事俾我聽？"
+        },
+        {
+          "who": "Mama",
+          "icon": "👩",
+          "en": "Of course! Let's open the book.",
+          "zh": "當然得！我哋揭開本書。"
+        },
+        {
+          "who": "Girl",
+          "icon": "👧",
+          "en": "Turn the page! What happens next?",
+          "zh": "揭去下一頁！跟住點呀？"
+        },
+        {
+          "who": "Mama",
+          "icon": "👩",
+          "en": "Let's read and find out together!",
+          "zh": "我哋一齊讀，一齊搵答案！"
+        }
+      ],
+      "task": "睡前讀故事時，女兒每揭一頁就講一次 'Turn the page!' 📖"
+    },
+    {
+      "id": "bedtime",
+      "emoji": "🌙",
+      "title_en": "Bedtime",
+      "title_zh": "瞓覺",
+      "vocab": [
+        {
+          "en": "bed",
+          "pron": "/bed/",
+          "zh": "床",
+          "ico": "🛏️"
+        },
+        {
+          "en": "sleep",
+          "pron": "/sliːp/",
+          "zh": "瞓覺",
+          "ico": "😴"
+        },
+        {
+          "en": "pillow",
+          "pron": "/ˈpɪləʊ/",
+          "zh": "枕頭",
+          "ico": "🛌"
+        },
+        {
+          "en": "goodnight",
+          "pron": "/ˌɡʊdˈnaɪt/",
+          "zh": "晚安",
+          "ico": "🌙"
+        }
+      ],
+      "dialogue": [
+        {
+          "who": "Mama",
+          "icon": "👩",
+          "en": "It's bedtime. Go to your bed.",
+          "zh": "瞓覺時間喇。返去你張床。"
+        },
+        {
+          "who": "Girl",
+          "icon": "👧",
+          "en": "Okay. Where is my pillow?",
+          "zh": "好呀。我個枕頭喺邊度？"
+        },
+        {
+          "who": "Mama",
+          "icon": "👩",
+          "en": "Right here. Time to sleep now.",
+          "zh": "就喺度。而家瞓覺喇。"
+        },
+        {
+          "who": "Girl",
+          "icon": "👧",
+          "en": "Goodnight, Mama! I love you.",
+          "zh": "晚安媽媽！我愛你。"
+        }
+      ],
+      "task": "瞓覺前，女兒同媽媽用英文講 'Goodnight' 同 'I love you' 🌙💤"
+    }
+  ]
+}
