@@ -1,0 +1,142 @@
+{
+  "brushing-teeth": {
+    "vocab": [
+      "audio/brushing-teeth-vocab-0.mp3",
+      "audio/brushing-teeth-vocab-1.mp3",
+      "audio/brushing-teeth-vocab-2.mp3",
+      "audio/brushing-teeth-vocab-3.mp3"
+    ],
+    "dialogue": [
+      "audio/brushing-teeth-line-0.mp3",
+      "audio/brushing-teeth-line-1.mp3",
+      "audio/brushing-teeth-line-2.mp3",
+      "audio/brushing-teeth-line-3.mp3"
+    ]
+  },
+  "breakfast": {
+    "vocab": [
+      "audio/breakfast-vocab-0.mp3",
+      "audio/breakfast-vocab-1.mp3",
+      "audio/breakfast-vocab-2.mp3",
+      "audio/breakfast-vocab-3.mp3"
+    ],
+    "dialogue": [
+      "audio/breakfast-line-0.mp3",
+      "audio/breakfast-line-1.mp3",
+      "audio/breakfast-line-2.mp3",
+      "audio/breakfast-line-3.mp3"
+    ]
+  },
+  "getting-dressed": {
+    "vocab": [
+      "audio/getting-dressed-vocab-0.mp3",
+      "audio/getting-dressed-vocab-1.mp3",
+      "audio/getting-dressed-vocab-2.mp3",
+      "audio/getting-dressed-vocab-3.mp3"
+    ],
+    "dialogue": [
+      "audio/getting-dressed-line-0.mp3",
+      "audio/getting-dressed-line-1.mp3",
+      "audio/getting-dressed-line-2.mp3",
+      "audio/getting-dressed-line-3.mp3"
+    ]
+  },
+  "going-to-school": {
+    "vocab": [
+      "audio/going-to-school-vocab-0.mp3",
+      "audio/going-to-school-vocab-1.mp3",
+      "audio/going-to-school-vocab-2.mp3",
+      "audio/going-to-school-vocab-3.mp3"
+    ],
+    "dialogue": [
+      "audio/going-to-school-line-0.mp3",
+      "audio/going-to-school-line-1.mp3",
+      "audio/going-to-school-line-2.mp3",
+      "audio/going-to-school-line-3.mp3"
+    ]
+  },
+  "playing-toys": {
+    "vocab": [
+      "audio/playing-toys-vocab-0.mp3",
+      "audio/playing-toys-vocab-1.mp3",
+      "audio/playing-toys-vocab-2.mp3",
+      "audio/playing-toys-vocab-3.mp3"
+    ],
+    "dialogue": [
+      "audio/playing-toys-line-0.mp3",
+      "audio/playing-toys-line-1.mp3",
+      "audio/playing-toys-line-2.mp3",
+      "audio/playing-toys-line-3.mp3"
+    ]
+  },
+  "bath-time": {
+    "vocab": [
+      "audio/bath-time-vocab-0.mp3",
+      "audio/bath-time-vocab-1.mp3",
+      "audio/bath-time-vocab-2.mp3",
+      "audio/bath-time-vocab-3.mp3"
+    ],
+    "dialogue": [
+      "audio/bath-time-line-0.mp3",
+      "audio/bath-time-line-1.mp3",
+      "audio/bath-time-line-2.mp3",
+      "audio/bath-time-line-3.mp3"
+    ]
+  },
+  "eating-fruit": {
+    "vocab": [
+      "audio/eating-fruit-vocab-0.mp3",
+      "audio/eating-fruit-vocab-1.mp3",
+      "audio/eating-fruit-vocab-2.mp3",
+      "audio/eating-fruit-vocab-3.mp3"
+    ],
+    "dialogue": [
+      "audio/eating-fruit-line-0.mp3",
+      "audio/eating-fruit-line-1.mp3",
+      "audio/eating-fruit-line-2.mp3",
+      "audio/eating-fruit-line-3.mp3"
+    ]
+  },
+  "at-the-park": {
+    "vocab": [
+      "audio/at-the-park-vocab-0.mp3",
+      "audio/at-the-park-vocab-1.mp3",
+      "audio/at-the-park-vocab-2.mp3",
+      "audio/at-the-park-vocab-3.mp3"
+    ],
+    "dialogue": [
+      "audio/at-the-park-line-0.mp3",
+      "audio/at-the-park-line-1.mp3",
+      "audio/at-the-park-line-2.mp3",
+      "audio/at-the-park-line-3.mp3"
+    ]
+  },
+  "reading-book": {
+    "vocab": [
+      "audio/reading-book-vocab-0.mp3",
+      "audio/reading-book-vocab-1.mp3",
+      "audio/reading-book-vocab-2.mp3",
+      "audio/reading-book-vocab-3.mp3"
+    ],
+    "dialogue": [
+      "audio/reading-book-line-0.mp3",
+      "audio/reading-book-line-1.mp3",
+      "audio/reading-book-line-2.mp3",
+      "audio/reading-book-line-3.mp3"
+    ]
+  },
+  "bedtime": {
+    "vocab": [
+      "audio/bedtime-vocab-0.mp3",
+      "audio/bedtime-vocab-1.mp3",
+      "audio/bedtime-vocab-2.mp3",
+      "audio/bedtime-vocab-3.mp3"
+    ],
+    "dialogue": [
+      "audio/bedtime-line-0.mp3",
+      "audio/bedtime-line-1.mp3",
+      "audio/bedtime-line-2.mp3",
+      "audio/bedtime-line-3.mp3"
+    ]
+  }
+}
