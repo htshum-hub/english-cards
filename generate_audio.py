@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
-# build: batched-kore-leda
+# build: batched-kore-leda-autochain
 """BATCHED GENERATION: Gemini-TTS for all scenes/modes/levels.
 Daughter=Kore (energetic child), Mama=Leda (warm young mother).
 - Incremental: skips existing files (safe to re-run).
 - Rate-limited: small pause between calls to avoid 429.
 - Fault-tolerant: a failed clip is logged and skipped, never crashes the run.
 - Batched: generates up to BATCH_LIMIT new clips per run, then commits.
-  Re-run the workflow until every clip exists (manifest lists all clips regardless)."""
+- Writes remaining.txt (number of clips still missing) so the workflow can
+  auto-chain the next batch until everything is done."""
 import os, json, base64, requests, time, struct
 from google.oauth2 import service_account
 from google.auth.transport.requests import Request
@@ -16,8 +17,8 @@ REGION = "global"
 MODEL = "gemini-2.5-flash-tts"
 ENDPOINT = f"https://aiplatform.googleapis.com/v1/projects/{PROJECT}/locations/{REGION}/publishers/google/models/{MODEL}:generateContent"
 
-BATCH_LIMIT = int(os.environ.get("BATCH_LIMIT", "200"))  # new clips per run
-PAUSE = float(os.environ.get("TTS_PAUSE", "1.2"))        # seconds between calls
+BATCH_LIMIT = int(os.environ.get("BATCH_LIMIT", "200"))
+PAUSE = float(os.environ.get("TTS_PAUSE", "1.2"))
 
 sa_info = json.loads(os.environ["GCP_SA_KEY"])
 creds = service_account.Credentials.from_service_account_info(
@@ -75,14 +76,17 @@ def synth(text, who):
 
 generated = 0
 failed = []
+missing = 0
 budget_left = BATCH_LIMIT
 
 def gen_file(fn, text, who):
-    global generated, budget_left
+    global generated, budget_left, missing
     if os.path.exists(fn) and os.path.getsize(fn) > 1000:
         return  # already done
+    # this clip is missing
     if budget_left <= 0:
-        return  # batch budget reached; leave for next run
+        missing += 1  # not done this run; still outstanding
+        return
     try:
         pcm = synth(text, who)
         with open(fn, "wb") as out:
@@ -92,6 +96,7 @@ def gen_file(fn, text, who):
         time.sleep(PAUSE)
     except Exception as e:
         failed.append((fn, str(e)[:80]))
+        missing += 1  # failed -> still outstanding
 
 manifest = {}
 total = 0
@@ -121,18 +126,14 @@ for scene in data["scenes"]:
 with open("manifest.json", "w", encoding="utf-8") as f:
     json.dump(manifest, f, ensure_ascii=False, indent=2)
 
-# count how many exist on disk
-done = 0
-for root, _, files in os.walk("audio"):
-    for fn in files:
-        if fn.endswith(".wav") and "-natural-" in fn or "-story-" in fn:
-            done += 1
+with open("remaining.txt", "w") as f:
+    f.write(str(missing))
 
-print(f"This run generated {generated} new clips. Failed: {len(failed)}")
-for f in failed[:10]:
-    print("  FAIL", f)
-print(f"Total clips referenced in manifest: {total}. WAV on disk (approx): {done}")
-if generated == 0 and not failed:
-    print("ALL DONE — every clip already exists.")
+print(f"This run generated {generated} new clips. Failed: {len(failed)}. Still missing: {missing}")
+for x in failed[:10]:
+    print("  FAIL", x)
+print(f"Total clips: {total}")
+if missing == 0:
+    print("ALL DONE.")
 else:
-    print("Re-run the workflow to continue the next batch.")
+    print(f"{missing} clips remain — workflow will auto-chain next batch.")
