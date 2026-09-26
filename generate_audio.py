@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# build: mama-compare
 """MAMA VOICE COMPARISON: same mama line, 4 Gemini female voices, pick youngest/warmest."""
 import os, json, base64, requests, time, struct
 from google.oauth2 import service_account
