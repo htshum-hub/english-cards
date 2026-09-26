@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
-# build: full-kore-leda
-"""FULL GENERATION: Gemini-TTS for all scenes/modes/levels.
+# build: batched-kore-leda
+"""BATCHED GENERATION: Gemini-TTS for all scenes/modes/levels.
 Daughter=Kore (energetic child), Mama=Leda (warm young mother).
-Auth: Service Account JSON (GCP_SA_KEY) -> OAuth token.
-Incremental: skips files that already exist (safe to re-run if a run times out)."""
+- Incremental: skips existing files (safe to re-run).
+- Rate-limited: small pause between calls to avoid 429.
+- Fault-tolerant: a failed clip is logged and skipped, never crashes the run.
+- Batched: generates up to BATCH_LIMIT new clips per run, then commits.
+  Re-run the workflow until every clip exists (manifest lists all clips regardless)."""
 import os, json, base64, requests, time, struct
 from google.oauth2 import service_account
 from google.auth.transport.requests import Request
@@ -12,6 +15,9 @@ PROJECT = "english-cards-tts"
 REGION = "global"
 MODEL = "gemini-2.5-flash-tts"
 ENDPOINT = f"https://aiplatform.googleapis.com/v1/projects/{PROJECT}/locations/{REGION}/publishers/google/models/{MODEL}:generateContent"
+
+BATCH_LIMIT = int(os.environ.get("BATCH_LIMIT", "200"))  # new clips per run
+PAUSE = float(os.environ.get("TTS_PAUSE", "1.2"))        # seconds between calls
 
 sa_info = json.loads(os.environ["GCP_SA_KEY"])
 creds = service_account.Credentials.from_service_account_info(
@@ -34,7 +40,7 @@ os.makedirs("audio", exist_ok=True)
 
 def refresh_token():
     global TOKEN, TOKEN_TS
-    if time.time() - TOKEN_TS > 2400:  # refresh every 40 min
+    if time.time() - TOKEN_TS > 2400:
         creds.refresh(Request())
         TOKEN = creds.token
         TOKEN_TS = time.time()
@@ -54,25 +60,41 @@ def synth(text, who):
         },
     }
     headers = {"Authorization": f"Bearer {TOKEN}", "Content-Type": "application/json"}
-    for attempt in range(4):
-        r = requests.post(ENDPOINT, json=body, headers=headers, timeout=90)
+    for attempt in range(6):
+        try:
+            r = requests.post(ENDPOINT, json=body, headers=headers, timeout=90)
+        except Exception:
+            time.sleep(5 * (attempt + 1)); continue
         if r.status_code == 200:
             b64 = r.json()["candidates"][0]["content"]["parts"][0]["inlineData"]["data"]
             return base64.b64decode(b64)
         if r.status_code in (429, 500, 503):
-            time.sleep(3 * (attempt + 1)); continue
-        raise RuntimeError(f"TTS {r.status_code}: {r.text[:300]}")
-    raise RuntimeError("failed after retries")
+            time.sleep(6 * (attempt + 1)); continue
+        raise RuntimeError(f"TTS {r.status_code}: {r.text[:200]}")
+    raise RuntimeError("rate-limited after retries")
+
+generated = 0
+failed = []
+budget_left = BATCH_LIMIT
 
 def gen_file(fn, text, who):
+    global generated, budget_left
     if os.path.exists(fn) and os.path.getsize(fn) > 1000:
-        return  # incremental skip
-    pcm = synth(text, who)
-    with open(fn, "wb") as out:
-        out.write(pcm_to_wav(pcm))
+        return  # already done
+    if budget_left <= 0:
+        return  # batch budget reached; leave for next run
+    try:
+        pcm = synth(text, who)
+        with open(fn, "wb") as out:
+            out.write(pcm_to_wav(pcm))
+        generated += 1
+        budget_left -= 1
+        time.sleep(PAUSE)
+    except Exception as e:
+        failed.append((fn, str(e)[:80]))
 
 manifest = {}
-count = 0
+total = 0
 for scene in data["scenes"]:
     sid = scene["id"]
     manifest[sid] = {}
@@ -89,14 +111,28 @@ for scene in data["scenes"]:
                 fn = f"audio/{sid}-{mode}-{lvl}-vocab-{i}.wav"
                 gen_file(fn, v["en"], "Girl")
                 manifest[sid][mode][lvl]["vocab"].append(fn)
-                count += 1
+                total += 1
             for i, d in enumerate(block.get("dialogue", [])):
                 fn = f"audio/{sid}-{mode}-{lvl}-line-{i}.wav"
                 gen_file(fn, d["en"], d.get("who", "Mama"))
                 manifest[sid][mode][lvl]["dialogue"].append(fn)
-                count += 1
-        print(f"[OK] {sid}/{mode}")
+                total += 1
 
 with open("manifest.json", "w", encoding="utf-8") as f:
     json.dump(manifest, f, ensure_ascii=False, indent=2)
-print(f"Done. Processed {count} audio files (Kore + Leda).")
+
+# count how many exist on disk
+done = 0
+for root, _, files in os.walk("audio"):
+    for fn in files:
+        if fn.endswith(".wav") and "-natural-" in fn or "-story-" in fn:
+            done += 1
+
+print(f"This run generated {generated} new clips. Failed: {len(failed)}")
+for f in failed[:10]:
+    print("  FAIL", f)
+print(f"Total clips referenced in manifest: {total}. WAV on disk (approx): {done}")
+if generated == 0 and not failed:
+    print("ALL DONE — every clip already exists.")
+else:
+    print("Re-run the workflow to continue the next batch.")
