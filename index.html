@@ -6,7 +6,7 @@
 <title>女兒英語情景學習卡 · Daily English Cards</title>
 <style>
   * { margin:0; padding:0; box-sizing:border-box; }
-  body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang HK','Microsoft JhengHei',sans-serif;
+  body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang HK','Microsoft JhengHei','Noto Color Emoji','Apple Color Emoji',sans-serif;
     background:#fdfcf7; color:#3c4043; padding:16px 12px; display:flex; justify-content:center; }
   .wrap { width:100%; max-width:480px; }
   .card { background:#fff; border-radius:28px; box-shadow:0 8px 40px rgba(60,64,67,.08); overflow:hidden; }
@@ -21,7 +21,7 @@
   .scene .emoji { font-size:44px; }
   .scene h1 { font-size:26px; font-weight:700; margin-top:4px; }
   .scene .zh { font-size:15px; color:#80868b; margin-top:2px; }
-  .illus { padding:0 22px; }
+  .illus { padding:0 22px; min-height:40px; }
   .illus img { width:100%; border-radius:20px; display:block; background:#f7f6f2; }
   .section { padding:22px 22px 0; }
   .label { font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:#a8a29a; font-weight:600;
@@ -66,8 +66,8 @@
       <div class="topbar">
         <span class="day" id="dayLabel">Loading…</span>
         <div class="nav">
-          <button class="navbtn" id="prevBtn" title="上一張">‹</button>
-          <button class="navbtn" id="nextBtn" title="下一張">›</button>
+          <button class="navbtn" id="prevBtn" title="上一張">&lsaquo;</button>
+          <button class="navbtn" id="nextBtn" title="下一張">&rsaquo;</button>
         </div>
       </div>
       <div class="scene">
@@ -75,7 +75,7 @@
         <h1 id="sTitleEn">Loading</h1>
         <div class="zh" id="sTitleZh">載入中…</div>
       </div>
-      <div class="illus"><img id="sImg" alt="情景插畫" src="images/placeholder.png" onerror="this.style.display='none'"></div>
+      <div class="illus"><img id="sImg" alt="情景插畫"></div>
       <div class="section">
         <div class="label"><span>📝</span> Words · 重點生字</div>
         <div class="vocab-grid" id="vocabGrid"></div>
@@ -123,7 +123,8 @@ function render(){
   document.getElementById('sTitleEn').textContent = s.title_en;
   document.getElementById('sTitleZh').textContent = s.title_zh;
   var img = document.getElementById('sImg');
-  img.style.display=''; img.src = 'images/'+s.id+'.png';
+  img.style.display='block';
+  img.src = 'images/'+s.id+'.png';
   var m = manifest[s.id] || {vocab:[], dialogue:[]};
   var vg = document.getElementById('vocabGrid'); vg.innerHTML='';
   s.vocab.forEach(function(v,i){
@@ -143,7 +144,7 @@ function render(){
   var dots=document.getElementById('dots'); dots.innerHTML='';
   scenes.forEach(function(_,i){
     var dot=document.createElement('div'); dot.className='dot'+(i===idx?' active':'');
-    dot.onclick=function(){ idx=i; render(); };
+    dot.onclick=function(){ idx=i; render(); window.scrollTo(0,0); };
     dots.appendChild(dot);
   });
   document.getElementById('prevBtn').disabled = idx===0;
@@ -160,8 +161,8 @@ function playAllLines(){
   }
   next();
 }
-document.getElementById('prevBtn').onclick=function(){ if(idx>0){idx--;render();} };
-document.getElementById('nextBtn').onclick=function(){ if(idx<scenes.length-1){idx++;render();} };
+document.getElementById('prevBtn').onclick=function(){ if(idx>0){idx--;render();window.scrollTo(0,0);} };
+document.getElementById('nextBtn').onclick=function(){ if(idx<scenes.length-1){idx++;render();window.scrollTo(0,0);} };
 document.getElementById('playAll').onclick=playAllLines;
 
 fetch('scenes.json').then(function(r){return r.json();}).then(function(data){
