@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# build: batched-kore-leda-autochain
+# build: batched-kore-leda-autochain-r2
 """BATCHED GENERATION: Gemini-TTS for all scenes/modes/levels.
 Daughter=Kore (energetic child), Mama=Leda (warm young mother).
 - Incremental: skips existing files (safe to re-run).
@@ -83,9 +83,8 @@ def gen_file(fn, text, who):
     global generated, budget_left, missing
     if os.path.exists(fn) and os.path.getsize(fn) > 1000:
         return  # already done
-    # this clip is missing
     if budget_left <= 0:
-        missing += 1  # not done this run; still outstanding
+        missing += 1
         return
     try:
         pcm = synth(text, who)
@@ -96,7 +95,7 @@ def gen_file(fn, text, who):
         time.sleep(PAUSE)
     except Exception as e:
         failed.append((fn, str(e)[:80]))
-        missing += 1  # failed -> still outstanding
+        missing += 1
 
 manifest = {}
 total = 0
