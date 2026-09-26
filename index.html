@@ -135,7 +135,7 @@ function speakFallback(text, isChild){
   window.speechSynthesis.speak(u);
 }
 function playAudio(file, text, isChild){
-  if(file){ audioEl.pause(); audioEl.src=file; audioEl.playbackRate=1.0;
+  if(file){ audioEl.pause(); audioEl.src=file; audioEl.playbackRate=rate;
     audioEl.play().catch(function(){ speakFallback(text,isChild); }); }
   else { speakFallback(text,isChild); }
 }
@@ -190,7 +190,7 @@ function playAllLines(){
   function next(){
     if(i>=lines.length) return;
     var line=lines[i], file=(m.dialogue||[])[i];
-    if(file){ audioEl.pause(); audioEl.src=file; audioEl.onended=function(){ i++; next(); };
+    if(file){ audioEl.pause(); audioEl.src=file; audioEl.playbackRate=rate; audioEl.onended=function(){ i++; next(); };
       audioEl.play().catch(function(){ speakFallback(line.en, line.who==='Girl'); i++; setTimeout(next,1600); }); }
     else { speakFallback(line.en, line.who==='Girl'); i++; setTimeout(next,1900); }
   }
