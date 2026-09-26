@@ -1,51 +1,65 @@
 #!/usr/bin/env python3
-"""讀 scenes.json，為每句對話用 Google Cloud TTS 生成 MP3。"""
-import os, json, base64, hashlib, requests
+"""讀 scenes.json，用 Google Gemini-TTS 為每個難度級別嘅對話同生字生成 MP3。
+語音：女兒=Kore (energetic child)、媽媽=Gacrux (warm mummy)。
+支援 3 級 (K3/P1/P2)。"""
+import os, json, base64, requests
 
 API_KEY = os.environ["TTS_API_KEY"]
-TTS_URL = f"https://texttospeech.googleapis.com/v1/text:synthesize?key={API_KEY}"
+URL = f"https://texttospeech.googleapis.com/v1/text:synthesize?key={API_KEY}"
+MODEL = "gemini-3.1-flash-tts-preview"
+
+# 語音設定（預選定）
+VOICES = {
+    "Mama": {"name": "Gacrux", "prompt": "Read aloud in a warm, gentle mummy tone."},
+    "Girl": {"name": "Kore",   "prompt": "Read aloud in an energetic, cheerful young child girl tone."},
+}
 
 with open("scenes.json", encoding="utf-8") as f:
     data = json.load(f)
 
-voice_map = data.get("voice", {"Mama": "en-US-Neural2-F", "Girl": "en-US-Neural2-C", "rate": 0.85})
-rate = voice_map.get("rate", 0.85)
-
+LEVELS = ["K3", "P1", "P2"]
 os.makedirs("audio", exist_ok=True)
 manifest = {}
 
-def synth(text, voice_name):
+def synth(text, who):
+    v = VOICES.get(who, VOICES["Mama"])
     body = {
-        "input": {"text": text},
-        "voice": {"languageCode": "en-US", "name": voice_name},
-        "audioConfig": {"audioEncoding": "MP3", "speakingRate": rate},
+        "input": {"prompt": v["prompt"], "text": text},
+        "voice": {"languageCode": "en-us", "name": v["name"], "model_name": MODEL},
+        "audioConfig": {"audioEncoding": "MP3"},
     }
-    r = requests.post(TTS_URL, json=body, timeout=30)
+    r = requests.post(URL, json=body, timeout=60)
     r.raise_for_status()
     return base64.b64decode(r.json()["audioContent"])
 
 count = 0
 for scene in data["scenes"]:
     sid = scene["id"]
-    manifest[sid] = {"vocab": [], "dialogue": []}
-    # 生字語音
-    for i, v in enumerate(scene["vocab"]):
-        fn = f"audio/{sid}-vocab-{i}.mp3"
-        with open(fn, "wb") as out:
-            out.write(synth(v["en"], voice_map["Girl"]))
-        manifest[sid]["vocab"].append(fn)
-        count += 1
-    # 對話語音（按角色揀聲）
-    for i, d in enumerate(scene["dialogue"]):
-        voice = voice_map.get(d["who"], voice_map["Mama"])
-        fn = f"audio/{sid}-line-{i}.mp3"
-        with open(fn, "wb") as out:
-            out.write(synth(d["en"], voice))
-        manifest[sid]["dialogue"].append(fn)
-        count += 1
-    print(f"[OK] {sid}: {len(scene['vocab'])} vocab + {len(scene['dialogue'])} lines")
+    manifest[sid] = {}
+    # levels 結構：scene["levels"][lvl] = {"vocab":[...], "dialogue":[...]}
+    levels = scene.get("levels")
+    if not levels:
+        # 舊格式後備：用 scene 本身做 K3
+        levels = {"K3": {"vocab": scene.get("vocab",[]), "dialogue": scene.get("dialogue",[])}}
+    for lvl in LEVELS:
+        if lvl not in levels:
+            continue
+        block = levels[lvl]
+        manifest[sid][lvl] = {"vocab": [], "dialogue": []}
+        for i, v in enumerate(block.get("vocab", [])):
+            fn = f"audio/{sid}-{lvl}-vocab-{i}.mp3"
+            with open(fn, "wb") as out:
+                out.write(synth(v["en"], "Girl"))
+            manifest[sid][lvl]["vocab"].append(fn)
+            count += 1
+        for i, d in enumerate(block.get("dialogue", [])):
+            fn = f"audio/{sid}-{lvl}-line-{i}.mp3"
+            with open(fn, "wb") as out:
+                out.write(synth(d["en"], d.get("who", "Mama")))
+            manifest[sid][lvl]["dialogue"].append(fn)
+            count += 1
+        print(f"[OK] {sid}/{lvl}")
 
 with open("manifest.json", "w", encoding="utf-8") as f:
     json.dump(manifest, f, ensure_ascii=False, indent=2)
-
-print(f"\\nDone. Generated {count} MP3 files.")
+print(f"Done. Generated {count} MP3 files.")
