@@ -9,6 +9,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
   tts:
@@ -35,10 +36,24 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add audio/ manifest.json sample_manifest.json 2>/dev/null || git add audio/
+          git add audio/ manifest.json remaining.txt
           if git diff --staged --quiet; then
             echo "No audio changes to commit."
           else
             git commit -m "Auto-generate audio [skip ci]"
             git push
+          fi
+
+      - name: Auto-chain next batch if clips remain
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          REMAIN=$(cat remaining.txt 2>/dev/null || echo 0)
+          echo "Remaining clips: $REMAIN"
+          if [ "$REMAIN" -gt 0 ]; then
+            echo "Triggering next batch..."
+            sleep 10
+            gh workflow run generate-audio.yml --ref main
+          else
+            echo "All clips generated. No more batches."
           fi
