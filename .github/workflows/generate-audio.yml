@@ -22,11 +22,12 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install requests
+        run: pip install requests google-auth
 
       - name: Generate MP3 from scenes.json
         env:
           TTS_API_KEY: ${{ secrets.GOOGLE_TTS_API_KEY }}
+          GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
         run: python generate_audio.py
 
       - name: Commit generated audio
@@ -37,6 +38,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "No audio changes to commit."
           else
-            git commit -m "Auto-generate audio via Google TTS [skip ci]"
+            git commit -m "Auto-generate audio [skip ci]"
             git push
           fi
