@@ -1,62 +1,1742 @@
 {
   "brushing-teeth": {
-    "K3": {
-      "vocab": [],
-      "dialogue": []
+    "natural": {
+      "K3": {
+        "vocab": [
+          "audio/brushing-teeth-natural-K3-vocab-0.mp3",
+          "audio/brushing-teeth-natural-K3-vocab-1.mp3",
+          "audio/brushing-teeth-natural-K3-vocab-2.mp3",
+          "audio/brushing-teeth-natural-K3-vocab-3.mp3",
+          "audio/brushing-teeth-natural-K3-vocab-4.mp3",
+          "audio/brushing-teeth-natural-K3-vocab-5.mp3",
+          "audio/brushing-teeth-natural-K3-vocab-6.mp3",
+          "audio/brushing-teeth-natural-K3-vocab-7.mp3"
+        ],
+        "dialogue": [
+          "audio/brushing-teeth-natural-K3-line-0.mp3",
+          "audio/brushing-teeth-natural-K3-line-1.mp3",
+          "audio/brushing-teeth-natural-K3-line-2.mp3",
+          "audio/brushing-teeth-natural-K3-line-3.mp3",
+          "audio/brushing-teeth-natural-K3-line-4.mp3",
+          "audio/brushing-teeth-natural-K3-line-5.mp3",
+          "audio/brushing-teeth-natural-K3-line-6.mp3",
+          "audio/brushing-teeth-natural-K3-line-7.mp3"
+        ]
+      },
+      "P1": {
+        "vocab": [
+          "audio/brushing-teeth-natural-P1-vocab-0.mp3",
+          "audio/brushing-teeth-natural-P1-vocab-1.mp3",
+          "audio/brushing-teeth-natural-P1-vocab-2.mp3",
+          "audio/brushing-teeth-natural-P1-vocab-3.mp3",
+          "audio/brushing-teeth-natural-P1-vocab-4.mp3",
+          "audio/brushing-teeth-natural-P1-vocab-5.mp3",
+          "audio/brushing-teeth-natural-P1-vocab-6.mp3",
+          "audio/brushing-teeth-natural-P1-vocab-7.mp3",
+          "audio/brushing-teeth-natural-P1-vocab-8.mp3",
+          "audio/brushing-teeth-natural-P1-vocab-9.mp3"
+        ],
+        "dialogue": [
+          "audio/brushing-teeth-natural-P1-line-0.mp3",
+          "audio/brushing-teeth-natural-P1-line-1.mp3",
+          "audio/brushing-teeth-natural-P1-line-2.mp3",
+          "audio/brushing-teeth-natural-P1-line-3.mp3",
+          "audio/brushing-teeth-natural-P1-line-4.mp3",
+          "audio/brushing-teeth-natural-P1-line-5.mp3",
+          "audio/brushing-teeth-natural-P1-line-6.mp3",
+          "audio/brushing-teeth-natural-P1-line-7.mp3",
+          "audio/brushing-teeth-natural-P1-line-8.mp3",
+          "audio/brushing-teeth-natural-P1-line-9.mp3",
+          "audio/brushing-teeth-natural-P1-line-10.mp3",
+          "audio/brushing-teeth-natural-P1-line-11.mp3"
+        ]
+      },
+      "P2": {
+        "vocab": [
+          "audio/brushing-teeth-natural-P2-vocab-0.mp3",
+          "audio/brushing-teeth-natural-P2-vocab-1.mp3",
+          "audio/brushing-teeth-natural-P2-vocab-2.mp3",
+          "audio/brushing-teeth-natural-P2-vocab-3.mp3",
+          "audio/brushing-teeth-natural-P2-vocab-4.mp3",
+          "audio/brushing-teeth-natural-P2-vocab-5.mp3",
+          "audio/brushing-teeth-natural-P2-vocab-6.mp3",
+          "audio/brushing-teeth-natural-P2-vocab-7.mp3",
+          "audio/brushing-teeth-natural-P2-vocab-8.mp3",
+          "audio/brushing-teeth-natural-P2-vocab-9.mp3",
+          "audio/brushing-teeth-natural-P2-vocab-10.mp3",
+          "audio/brushing-teeth-natural-P2-vocab-11.mp3"
+        ],
+        "dialogue": [
+          "audio/brushing-teeth-natural-P2-line-0.mp3",
+          "audio/brushing-teeth-natural-P2-line-1.mp3",
+          "audio/brushing-teeth-natural-P2-line-2.mp3",
+          "audio/brushing-teeth-natural-P2-line-3.mp3",
+          "audio/brushing-teeth-natural-P2-line-4.mp3",
+          "audio/brushing-teeth-natural-P2-line-5.mp3",
+          "audio/brushing-teeth-natural-P2-line-6.mp3",
+          "audio/brushing-teeth-natural-P2-line-7.mp3",
+          "audio/brushing-teeth-natural-P2-line-8.mp3",
+          "audio/brushing-teeth-natural-P2-line-9.mp3",
+          "audio/brushing-teeth-natural-P2-line-10.mp3",
+          "audio/brushing-teeth-natural-P2-line-11.mp3",
+          "audio/brushing-teeth-natural-P2-line-12.mp3",
+          "audio/brushing-teeth-natural-P2-line-13.mp3",
+          "audio/brushing-teeth-natural-P2-line-14.mp3",
+          "audio/brushing-teeth-natural-P2-line-15.mp3"
+        ]
+      }
+    },
+    "story": {
+      "K3": {
+        "vocab": [
+          "audio/brushing-teeth-story-K3-vocab-0.mp3",
+          "audio/brushing-teeth-story-K3-vocab-1.mp3",
+          "audio/brushing-teeth-story-K3-vocab-2.mp3",
+          "audio/brushing-teeth-story-K3-vocab-3.mp3",
+          "audio/brushing-teeth-story-K3-vocab-4.mp3",
+          "audio/brushing-teeth-story-K3-vocab-5.mp3",
+          "audio/brushing-teeth-story-K3-vocab-6.mp3",
+          "audio/brushing-teeth-story-K3-vocab-7.mp3"
+        ],
+        "dialogue": [
+          "audio/brushing-teeth-story-K3-line-0.mp3",
+          "audio/brushing-teeth-story-K3-line-1.mp3",
+          "audio/brushing-teeth-story-K3-line-2.mp3",
+          "audio/brushing-teeth-story-K3-line-3.mp3",
+          "audio/brushing-teeth-story-K3-line-4.mp3",
+          "audio/brushing-teeth-story-K3-line-5.mp3",
+          "audio/brushing-teeth-story-K3-line-6.mp3",
+          "audio/brushing-teeth-story-K3-line-7.mp3"
+        ]
+      },
+      "P1": {
+        "vocab": [
+          "audio/brushing-teeth-story-P1-vocab-0.mp3",
+          "audio/brushing-teeth-story-P1-vocab-1.mp3",
+          "audio/brushing-teeth-story-P1-vocab-2.mp3",
+          "audio/brushing-teeth-story-P1-vocab-3.mp3",
+          "audio/brushing-teeth-story-P1-vocab-4.mp3",
+          "audio/brushing-teeth-story-P1-vocab-5.mp3",
+          "audio/brushing-teeth-story-P1-vocab-6.mp3",
+          "audio/brushing-teeth-story-P1-vocab-7.mp3",
+          "audio/brushing-teeth-story-P1-vocab-8.mp3",
+          "audio/brushing-teeth-story-P1-vocab-9.mp3"
+        ],
+        "dialogue": [
+          "audio/brushing-teeth-story-P1-line-0.mp3",
+          "audio/brushing-teeth-story-P1-line-1.mp3",
+          "audio/brushing-teeth-story-P1-line-2.mp3",
+          "audio/brushing-teeth-story-P1-line-3.mp3",
+          "audio/brushing-teeth-story-P1-line-4.mp3",
+          "audio/brushing-teeth-story-P1-line-5.mp3",
+          "audio/brushing-teeth-story-P1-line-6.mp3",
+          "audio/brushing-teeth-story-P1-line-7.mp3",
+          "audio/brushing-teeth-story-P1-line-8.mp3",
+          "audio/brushing-teeth-story-P1-line-9.mp3",
+          "audio/brushing-teeth-story-P1-line-10.mp3",
+          "audio/brushing-teeth-story-P1-line-11.mp3"
+        ]
+      },
+      "P2": {
+        "vocab": [
+          "audio/brushing-teeth-story-P2-vocab-0.mp3",
+          "audio/brushing-teeth-story-P2-vocab-1.mp3",
+          "audio/brushing-teeth-story-P2-vocab-2.mp3",
+          "audio/brushing-teeth-story-P2-vocab-3.mp3",
+          "audio/brushing-teeth-story-P2-vocab-4.mp3",
+          "audio/brushing-teeth-story-P2-vocab-5.mp3",
+          "audio/brushing-teeth-story-P2-vocab-6.mp3",
+          "audio/brushing-teeth-story-P2-vocab-7.mp3",
+          "audio/brushing-teeth-story-P2-vocab-8.mp3",
+          "audio/brushing-teeth-story-P2-vocab-9.mp3",
+          "audio/brushing-teeth-story-P2-vocab-10.mp3",
+          "audio/brushing-teeth-story-P2-vocab-11.mp3"
+        ],
+        "dialogue": [
+          "audio/brushing-teeth-story-P2-line-0.mp3",
+          "audio/brushing-teeth-story-P2-line-1.mp3",
+          "audio/brushing-teeth-story-P2-line-2.mp3",
+          "audio/brushing-teeth-story-P2-line-3.mp3",
+          "audio/brushing-teeth-story-P2-line-4.mp3",
+          "audio/brushing-teeth-story-P2-line-5.mp3",
+          "audio/brushing-teeth-story-P2-line-6.mp3",
+          "audio/brushing-teeth-story-P2-line-7.mp3",
+          "audio/brushing-teeth-story-P2-line-8.mp3",
+          "audio/brushing-teeth-story-P2-line-9.mp3",
+          "audio/brushing-teeth-story-P2-line-10.mp3",
+          "audio/brushing-teeth-story-P2-line-11.mp3",
+          "audio/brushing-teeth-story-P2-line-12.mp3",
+          "audio/brushing-teeth-story-P2-line-13.mp3",
+          "audio/brushing-teeth-story-P2-line-14.mp3",
+          "audio/brushing-teeth-story-P2-line-15.mp3"
+        ]
+      }
     }
   },
   "breakfast": {
-    "K3": {
-      "vocab": [],
-      "dialogue": []
+    "natural": {
+      "K3": {
+        "vocab": [
+          "audio/breakfast-natural-K3-vocab-0.mp3",
+          "audio/breakfast-natural-K3-vocab-1.mp3",
+          "audio/breakfast-natural-K3-vocab-2.mp3",
+          "audio/breakfast-natural-K3-vocab-3.mp3",
+          "audio/breakfast-natural-K3-vocab-4.mp3",
+          "audio/breakfast-natural-K3-vocab-5.mp3",
+          "audio/breakfast-natural-K3-vocab-6.mp3",
+          "audio/breakfast-natural-K3-vocab-7.mp3"
+        ],
+        "dialogue": [
+          "audio/breakfast-natural-K3-line-0.mp3",
+          "audio/breakfast-natural-K3-line-1.mp3",
+          "audio/breakfast-natural-K3-line-2.mp3",
+          "audio/breakfast-natural-K3-line-3.mp3",
+          "audio/breakfast-natural-K3-line-4.mp3",
+          "audio/breakfast-natural-K3-line-5.mp3",
+          "audio/breakfast-natural-K3-line-6.mp3",
+          "audio/breakfast-natural-K3-line-7.mp3"
+        ]
+      },
+      "P1": {
+        "vocab": [
+          "audio/breakfast-natural-P1-vocab-0.mp3",
+          "audio/breakfast-natural-P1-vocab-1.mp3",
+          "audio/breakfast-natural-P1-vocab-2.mp3",
+          "audio/breakfast-natural-P1-vocab-3.mp3",
+          "audio/breakfast-natural-P1-vocab-4.mp3",
+          "audio/breakfast-natural-P1-vocab-5.mp3",
+          "audio/breakfast-natural-P1-vocab-6.mp3",
+          "audio/breakfast-natural-P1-vocab-7.mp3",
+          "audio/breakfast-natural-P1-vocab-8.mp3",
+          "audio/breakfast-natural-P1-vocab-9.mp3"
+        ],
+        "dialogue": [
+          "audio/breakfast-natural-P1-line-0.mp3",
+          "audio/breakfast-natural-P1-line-1.mp3",
+          "audio/breakfast-natural-P1-line-2.mp3",
+          "audio/breakfast-natural-P1-line-3.mp3",
+          "audio/breakfast-natural-P1-line-4.mp3",
+          "audio/breakfast-natural-P1-line-5.mp3",
+          "audio/breakfast-natural-P1-line-6.mp3",
+          "audio/breakfast-natural-P1-line-7.mp3",
+          "audio/breakfast-natural-P1-line-8.mp3",
+          "audio/breakfast-natural-P1-line-9.mp3",
+          "audio/breakfast-natural-P1-line-10.mp3",
+          "audio/breakfast-natural-P1-line-11.mp3"
+        ]
+      },
+      "P2": {
+        "vocab": [
+          "audio/breakfast-natural-P2-vocab-0.mp3",
+          "audio/breakfast-natural-P2-vocab-1.mp3",
+          "audio/breakfast-natural-P2-vocab-2.mp3",
+          "audio/breakfast-natural-P2-vocab-3.mp3",
+          "audio/breakfast-natural-P2-vocab-4.mp3",
+          "audio/breakfast-natural-P2-vocab-5.mp3",
+          "audio/breakfast-natural-P2-vocab-6.mp3",
+          "audio/breakfast-natural-P2-vocab-7.mp3",
+          "audio/breakfast-natural-P2-vocab-8.mp3",
+          "audio/breakfast-natural-P2-vocab-9.mp3",
+          "audio/breakfast-natural-P2-vocab-10.mp3",
+          "audio/breakfast-natural-P2-vocab-11.mp3"
+        ],
+        "dialogue": [
+          "audio/breakfast-natural-P2-line-0.mp3",
+          "audio/breakfast-natural-P2-line-1.mp3",
+          "audio/breakfast-natural-P2-line-2.mp3",
+          "audio/breakfast-natural-P2-line-3.mp3",
+          "audio/breakfast-natural-P2-line-4.mp3",
+          "audio/breakfast-natural-P2-line-5.mp3",
+          "audio/breakfast-natural-P2-line-6.mp3",
+          "audio/breakfast-natural-P2-line-7.mp3",
+          "audio/breakfast-natural-P2-line-8.mp3",
+          "audio/breakfast-natural-P2-line-9.mp3",
+          "audio/breakfast-natural-P2-line-10.mp3",
+          "audio/breakfast-natural-P2-line-11.mp3",
+          "audio/breakfast-natural-P2-line-12.mp3",
+          "audio/breakfast-natural-P2-line-13.mp3",
+          "audio/breakfast-natural-P2-line-14.mp3",
+          "audio/breakfast-natural-P2-line-15.mp3"
+        ]
+      }
+    },
+    "story": {
+      "K3": {
+        "vocab": [
+          "audio/breakfast-story-K3-vocab-0.mp3",
+          "audio/breakfast-story-K3-vocab-1.mp3",
+          "audio/breakfast-story-K3-vocab-2.mp3",
+          "audio/breakfast-story-K3-vocab-3.mp3",
+          "audio/breakfast-story-K3-vocab-4.mp3",
+          "audio/breakfast-story-K3-vocab-5.mp3",
+          "audio/breakfast-story-K3-vocab-6.mp3",
+          "audio/breakfast-story-K3-vocab-7.mp3"
+        ],
+        "dialogue": [
+          "audio/breakfast-story-K3-line-0.mp3",
+          "audio/breakfast-story-K3-line-1.mp3",
+          "audio/breakfast-story-K3-line-2.mp3",
+          "audio/breakfast-story-K3-line-3.mp3",
+          "audio/breakfast-story-K3-line-4.mp3",
+          "audio/breakfast-story-K3-line-5.mp3",
+          "audio/breakfast-story-K3-line-6.mp3",
+          "audio/breakfast-story-K3-line-7.mp3"
+        ]
+      },
+      "P1": {
+        "vocab": [
+          "audio/breakfast-story-P1-vocab-0.mp3",
+          "audio/breakfast-story-P1-vocab-1.mp3",
+          "audio/breakfast-story-P1-vocab-2.mp3",
+          "audio/breakfast-story-P1-vocab-3.mp3",
+          "audio/breakfast-story-P1-vocab-4.mp3",
+          "audio/breakfast-story-P1-vocab-5.mp3",
+          "audio/breakfast-story-P1-vocab-6.mp3",
+          "audio/breakfast-story-P1-vocab-7.mp3",
+          "audio/breakfast-story-P1-vocab-8.mp3",
+          "audio/breakfast-story-P1-vocab-9.mp3"
+        ],
+        "dialogue": [
+          "audio/breakfast-story-P1-line-0.mp3",
+          "audio/breakfast-story-P1-line-1.mp3",
+          "audio/breakfast-story-P1-line-2.mp3",
+          "audio/breakfast-story-P1-line-3.mp3",
+          "audio/breakfast-story-P1-line-4.mp3",
+          "audio/breakfast-story-P1-line-5.mp3",
+          "audio/breakfast-story-P1-line-6.mp3",
+          "audio/breakfast-story-P1-line-7.mp3",
+          "audio/breakfast-story-P1-line-8.mp3",
+          "audio/breakfast-story-P1-line-9.mp3",
+          "audio/breakfast-story-P1-line-10.mp3",
+          "audio/breakfast-story-P1-line-11.mp3"
+        ]
+      },
+      "P2": {
+        "vocab": [
+          "audio/breakfast-story-P2-vocab-0.mp3",
+          "audio/breakfast-story-P2-vocab-1.mp3",
+          "audio/breakfast-story-P2-vocab-2.mp3",
+          "audio/breakfast-story-P2-vocab-3.mp3",
+          "audio/breakfast-story-P2-vocab-4.mp3",
+          "audio/breakfast-story-P2-vocab-5.mp3",
+          "audio/breakfast-story-P2-vocab-6.mp3",
+          "audio/breakfast-story-P2-vocab-7.mp3",
+          "audio/breakfast-story-P2-vocab-8.mp3",
+          "audio/breakfast-story-P2-vocab-9.mp3",
+          "audio/breakfast-story-P2-vocab-10.mp3",
+          "audio/breakfast-story-P2-vocab-11.mp3"
+        ],
+        "dialogue": [
+          "audio/breakfast-story-P2-line-0.mp3",
+          "audio/breakfast-story-P2-line-1.mp3",
+          "audio/breakfast-story-P2-line-2.mp3",
+          "audio/breakfast-story-P2-line-3.mp3",
+          "audio/breakfast-story-P2-line-4.mp3",
+          "audio/breakfast-story-P2-line-5.mp3",
+          "audio/breakfast-story-P2-line-6.mp3",
+          "audio/breakfast-story-P2-line-7.mp3",
+          "audio/breakfast-story-P2-line-8.mp3",
+          "audio/breakfast-story-P2-line-9.mp3",
+          "audio/breakfast-story-P2-line-10.mp3",
+          "audio/breakfast-story-P2-line-11.mp3",
+          "audio/breakfast-story-P2-line-12.mp3",
+          "audio/breakfast-story-P2-line-13.mp3",
+          "audio/breakfast-story-P2-line-14.mp3",
+          "audio/breakfast-story-P2-line-15.mp3"
+        ]
+      }
     }
   },
   "getting-dressed": {
-    "K3": {
-      "vocab": [],
-      "dialogue": []
+    "natural": {
+      "K3": {
+        "vocab": [
+          "audio/getting-dressed-natural-K3-vocab-0.mp3",
+          "audio/getting-dressed-natural-K3-vocab-1.mp3",
+          "audio/getting-dressed-natural-K3-vocab-2.mp3",
+          "audio/getting-dressed-natural-K3-vocab-3.mp3",
+          "audio/getting-dressed-natural-K3-vocab-4.mp3",
+          "audio/getting-dressed-natural-K3-vocab-5.mp3",
+          "audio/getting-dressed-natural-K3-vocab-6.mp3",
+          "audio/getting-dressed-natural-K3-vocab-7.mp3"
+        ],
+        "dialogue": [
+          "audio/getting-dressed-natural-K3-line-0.mp3",
+          "audio/getting-dressed-natural-K3-line-1.mp3",
+          "audio/getting-dressed-natural-K3-line-2.mp3",
+          "audio/getting-dressed-natural-K3-line-3.mp3",
+          "audio/getting-dressed-natural-K3-line-4.mp3",
+          "audio/getting-dressed-natural-K3-line-5.mp3",
+          "audio/getting-dressed-natural-K3-line-6.mp3",
+          "audio/getting-dressed-natural-K3-line-7.mp3"
+        ]
+      },
+      "P1": {
+        "vocab": [
+          "audio/getting-dressed-natural-P1-vocab-0.mp3",
+          "audio/getting-dressed-natural-P1-vocab-1.mp3",
+          "audio/getting-dressed-natural-P1-vocab-2.mp3",
+          "audio/getting-dressed-natural-P1-vocab-3.mp3",
+          "audio/getting-dressed-natural-P1-vocab-4.mp3",
+          "audio/getting-dressed-natural-P1-vocab-5.mp3",
+          "audio/getting-dressed-natural-P1-vocab-6.mp3",
+          "audio/getting-dressed-natural-P1-vocab-7.mp3",
+          "audio/getting-dressed-natural-P1-vocab-8.mp3",
+          "audio/getting-dressed-natural-P1-vocab-9.mp3"
+        ],
+        "dialogue": [
+          "audio/getting-dressed-natural-P1-line-0.mp3",
+          "audio/getting-dressed-natural-P1-line-1.mp3",
+          "audio/getting-dressed-natural-P1-line-2.mp3",
+          "audio/getting-dressed-natural-P1-line-3.mp3",
+          "audio/getting-dressed-natural-P1-line-4.mp3",
+          "audio/getting-dressed-natural-P1-line-5.mp3",
+          "audio/getting-dressed-natural-P1-line-6.mp3",
+          "audio/getting-dressed-natural-P1-line-7.mp3",
+          "audio/getting-dressed-natural-P1-line-8.mp3",
+          "audio/getting-dressed-natural-P1-line-9.mp3",
+          "audio/getting-dressed-natural-P1-line-10.mp3",
+          "audio/getting-dressed-natural-P1-line-11.mp3"
+        ]
+      },
+      "P2": {
+        "vocab": [
+          "audio/getting-dressed-natural-P2-vocab-0.mp3",
+          "audio/getting-dressed-natural-P2-vocab-1.mp3",
+          "audio/getting-dressed-natural-P2-vocab-2.mp3",
+          "audio/getting-dressed-natural-P2-vocab-3.mp3",
+          "audio/getting-dressed-natural-P2-vocab-4.mp3",
+          "audio/getting-dressed-natural-P2-vocab-5.mp3",
+          "audio/getting-dressed-natural-P2-vocab-6.mp3",
+          "audio/getting-dressed-natural-P2-vocab-7.mp3",
+          "audio/getting-dressed-natural-P2-vocab-8.mp3",
+          "audio/getting-dressed-natural-P2-vocab-9.mp3",
+          "audio/getting-dressed-natural-P2-vocab-10.mp3",
+          "audio/getting-dressed-natural-P2-vocab-11.mp3"
+        ],
+        "dialogue": [
+          "audio/getting-dressed-natural-P2-line-0.mp3",
+          "audio/getting-dressed-natural-P2-line-1.mp3",
+          "audio/getting-dressed-natural-P2-line-2.mp3",
+          "audio/getting-dressed-natural-P2-line-3.mp3",
+          "audio/getting-dressed-natural-P2-line-4.mp3",
+          "audio/getting-dressed-natural-P2-line-5.mp3",
+          "audio/getting-dressed-natural-P2-line-6.mp3",
+          "audio/getting-dressed-natural-P2-line-7.mp3",
+          "audio/getting-dressed-natural-P2-line-8.mp3",
+          "audio/getting-dressed-natural-P2-line-9.mp3",
+          "audio/getting-dressed-natural-P2-line-10.mp3",
+          "audio/getting-dressed-natural-P2-line-11.mp3",
+          "audio/getting-dressed-natural-P2-line-12.mp3",
+          "audio/getting-dressed-natural-P2-line-13.mp3",
+          "audio/getting-dressed-natural-P2-line-14.mp3",
+          "audio/getting-dressed-natural-P2-line-15.mp3"
+        ]
+      }
+    },
+    "story": {
+      "K3": {
+        "vocab": [
+          "audio/getting-dressed-story-K3-vocab-0.mp3",
+          "audio/getting-dressed-story-K3-vocab-1.mp3",
+          "audio/getting-dressed-story-K3-vocab-2.mp3",
+          "audio/getting-dressed-story-K3-vocab-3.mp3",
+          "audio/getting-dressed-story-K3-vocab-4.mp3",
+          "audio/getting-dressed-story-K3-vocab-5.mp3",
+          "audio/getting-dressed-story-K3-vocab-6.mp3",
+          "audio/getting-dressed-story-K3-vocab-7.mp3"
+        ],
+        "dialogue": [
+          "audio/getting-dressed-story-K3-line-0.mp3",
+          "audio/getting-dressed-story-K3-line-1.mp3",
+          "audio/getting-dressed-story-K3-line-2.mp3",
+          "audio/getting-dressed-story-K3-line-3.mp3",
+          "audio/getting-dressed-story-K3-line-4.mp3",
+          "audio/getting-dressed-story-K3-line-5.mp3",
+          "audio/getting-dressed-story-K3-line-6.mp3",
+          "audio/getting-dressed-story-K3-line-7.mp3"
+        ]
+      },
+      "P1": {
+        "vocab": [
+          "audio/getting-dressed-story-P1-vocab-0.mp3",
+          "audio/getting-dressed-story-P1-vocab-1.mp3",
+          "audio/getting-dressed-story-P1-vocab-2.mp3",
+          "audio/getting-dressed-story-P1-vocab-3.mp3",
+          "audio/getting-dressed-story-P1-vocab-4.mp3",
+          "audio/getting-dressed-story-P1-vocab-5.mp3",
+          "audio/getting-dressed-story-P1-vocab-6.mp3",
+          "audio/getting-dressed-story-P1-vocab-7.mp3",
+          "audio/getting-dressed-story-P1-vocab-8.mp3",
+          "audio/getting-dressed-story-P1-vocab-9.mp3"
+        ],
+        "dialogue": [
+          "audio/getting-dressed-story-P1-line-0.mp3",
+          "audio/getting-dressed-story-P1-line-1.mp3",
+          "audio/getting-dressed-story-P1-line-2.mp3",
+          "audio/getting-dressed-story-P1-line-3.mp3",
+          "audio/getting-dressed-story-P1-line-4.mp3",
+          "audio/getting-dressed-story-P1-line-5.mp3",
+          "audio/getting-dressed-story-P1-line-6.mp3",
+          "audio/getting-dressed-story-P1-line-7.mp3",
+          "audio/getting-dressed-story-P1-line-8.mp3",
+          "audio/getting-dressed-story-P1-line-9.mp3",
+          "audio/getting-dressed-story-P1-line-10.mp3",
+          "audio/getting-dressed-story-P1-line-11.mp3"
+        ]
+      },
+      "P2": {
+        "vocab": [
+          "audio/getting-dressed-story-P2-vocab-0.mp3",
+          "audio/getting-dressed-story-P2-vocab-1.mp3",
+          "audio/getting-dressed-story-P2-vocab-2.mp3",
+          "audio/getting-dressed-story-P2-vocab-3.mp3",
+          "audio/getting-dressed-story-P2-vocab-4.mp3",
+          "audio/getting-dressed-story-P2-vocab-5.mp3",
+          "audio/getting-dressed-story-P2-vocab-6.mp3",
+          "audio/getting-dressed-story-P2-vocab-7.mp3",
+          "audio/getting-dressed-story-P2-vocab-8.mp3",
+          "audio/getting-dressed-story-P2-vocab-9.mp3",
+          "audio/getting-dressed-story-P2-vocab-10.mp3",
+          "audio/getting-dressed-story-P2-vocab-11.mp3"
+        ],
+        "dialogue": [
+          "audio/getting-dressed-story-P2-line-0.mp3",
+          "audio/getting-dressed-story-P2-line-1.mp3",
+          "audio/getting-dressed-story-P2-line-2.mp3",
+          "audio/getting-dressed-story-P2-line-3.mp3",
+          "audio/getting-dressed-story-P2-line-4.mp3",
+          "audio/getting-dressed-story-P2-line-5.mp3",
+          "audio/getting-dressed-story-P2-line-6.mp3",
+          "audio/getting-dressed-story-P2-line-7.mp3",
+          "audio/getting-dressed-story-P2-line-8.mp3",
+          "audio/getting-dressed-story-P2-line-9.mp3",
+          "audio/getting-dressed-story-P2-line-10.mp3",
+          "audio/getting-dressed-story-P2-line-11.mp3",
+          "audio/getting-dressed-story-P2-line-12.mp3",
+          "audio/getting-dressed-story-P2-line-13.mp3",
+          "audio/getting-dressed-story-P2-line-14.mp3",
+          "audio/getting-dressed-story-P2-line-15.mp3"
+        ]
+      }
     }
   },
   "going-to-school": {
-    "K3": {
-      "vocab": [],
-      "dialogue": []
+    "natural": {
+      "K3": {
+        "vocab": [
+          "audio/going-to-school-natural-K3-vocab-0.mp3",
+          "audio/going-to-school-natural-K3-vocab-1.mp3",
+          "audio/going-to-school-natural-K3-vocab-2.mp3",
+          "audio/going-to-school-natural-K3-vocab-3.mp3",
+          "audio/going-to-school-natural-K3-vocab-4.mp3",
+          "audio/going-to-school-natural-K3-vocab-5.mp3",
+          "audio/going-to-school-natural-K3-vocab-6.mp3",
+          "audio/going-to-school-natural-K3-vocab-7.mp3"
+        ],
+        "dialogue": [
+          "audio/going-to-school-natural-K3-line-0.mp3",
+          "audio/going-to-school-natural-K3-line-1.mp3",
+          "audio/going-to-school-natural-K3-line-2.mp3",
+          "audio/going-to-school-natural-K3-line-3.mp3",
+          "audio/going-to-school-natural-K3-line-4.mp3",
+          "audio/going-to-school-natural-K3-line-5.mp3",
+          "audio/going-to-school-natural-K3-line-6.mp3",
+          "audio/going-to-school-natural-K3-line-7.mp3"
+        ]
+      },
+      "P1": {
+        "vocab": [
+          "audio/going-to-school-natural-P1-vocab-0.mp3",
+          "audio/going-to-school-natural-P1-vocab-1.mp3",
+          "audio/going-to-school-natural-P1-vocab-2.mp3",
+          "audio/going-to-school-natural-P1-vocab-3.mp3",
+          "audio/going-to-school-natural-P1-vocab-4.mp3",
+          "audio/going-to-school-natural-P1-vocab-5.mp3",
+          "audio/going-to-school-natural-P1-vocab-6.mp3",
+          "audio/going-to-school-natural-P1-vocab-7.mp3",
+          "audio/going-to-school-natural-P1-vocab-8.mp3",
+          "audio/going-to-school-natural-P1-vocab-9.mp3"
+        ],
+        "dialogue": [
+          "audio/going-to-school-natural-P1-line-0.mp3",
+          "audio/going-to-school-natural-P1-line-1.mp3",
+          "audio/going-to-school-natural-P1-line-2.mp3",
+          "audio/going-to-school-natural-P1-line-3.mp3",
+          "audio/going-to-school-natural-P1-line-4.mp3",
+          "audio/going-to-school-natural-P1-line-5.mp3",
+          "audio/going-to-school-natural-P1-line-6.mp3",
+          "audio/going-to-school-natural-P1-line-7.mp3",
+          "audio/going-to-school-natural-P1-line-8.mp3",
+          "audio/going-to-school-natural-P1-line-9.mp3",
+          "audio/going-to-school-natural-P1-line-10.mp3",
+          "audio/going-to-school-natural-P1-line-11.mp3"
+        ]
+      },
+      "P2": {
+        "vocab": [
+          "audio/going-to-school-natural-P2-vocab-0.mp3",
+          "audio/going-to-school-natural-P2-vocab-1.mp3",
+          "audio/going-to-school-natural-P2-vocab-2.mp3",
+          "audio/going-to-school-natural-P2-vocab-3.mp3",
+          "audio/going-to-school-natural-P2-vocab-4.mp3",
+          "audio/going-to-school-natural-P2-vocab-5.mp3",
+          "audio/going-to-school-natural-P2-vocab-6.mp3",
+          "audio/going-to-school-natural-P2-vocab-7.mp3",
+          "audio/going-to-school-natural-P2-vocab-8.mp3",
+          "audio/going-to-school-natural-P2-vocab-9.mp3",
+          "audio/going-to-school-natural-P2-vocab-10.mp3",
+          "audio/going-to-school-natural-P2-vocab-11.mp3"
+        ],
+        "dialogue": [
+          "audio/going-to-school-natural-P2-line-0.mp3",
+          "audio/going-to-school-natural-P2-line-1.mp3",
+          "audio/going-to-school-natural-P2-line-2.mp3",
+          "audio/going-to-school-natural-P2-line-3.mp3",
+          "audio/going-to-school-natural-P2-line-4.mp3",
+          "audio/going-to-school-natural-P2-line-5.mp3",
+          "audio/going-to-school-natural-P2-line-6.mp3",
+          "audio/going-to-school-natural-P2-line-7.mp3",
+          "audio/going-to-school-natural-P2-line-8.mp3",
+          "audio/going-to-school-natural-P2-line-9.mp3",
+          "audio/going-to-school-natural-P2-line-10.mp3",
+          "audio/going-to-school-natural-P2-line-11.mp3",
+          "audio/going-to-school-natural-P2-line-12.mp3",
+          "audio/going-to-school-natural-P2-line-13.mp3",
+          "audio/going-to-school-natural-P2-line-14.mp3",
+          "audio/going-to-school-natural-P2-line-15.mp3"
+        ]
+      }
+    },
+    "story": {
+      "K3": {
+        "vocab": [
+          "audio/going-to-school-story-K3-vocab-0.mp3",
+          "audio/going-to-school-story-K3-vocab-1.mp3",
+          "audio/going-to-school-story-K3-vocab-2.mp3",
+          "audio/going-to-school-story-K3-vocab-3.mp3",
+          "audio/going-to-school-story-K3-vocab-4.mp3",
+          "audio/going-to-school-story-K3-vocab-5.mp3",
+          "audio/going-to-school-story-K3-vocab-6.mp3",
+          "audio/going-to-school-story-K3-vocab-7.mp3"
+        ],
+        "dialogue": [
+          "audio/going-to-school-story-K3-line-0.mp3",
+          "audio/going-to-school-story-K3-line-1.mp3",
+          "audio/going-to-school-story-K3-line-2.mp3",
+          "audio/going-to-school-story-K3-line-3.mp3",
+          "audio/going-to-school-story-K3-line-4.mp3",
+          "audio/going-to-school-story-K3-line-5.mp3",
+          "audio/going-to-school-story-K3-line-6.mp3",
+          "audio/going-to-school-story-K3-line-7.mp3"
+        ]
+      },
+      "P1": {
+        "vocab": [
+          "audio/going-to-school-story-P1-vocab-0.mp3",
+          "audio/going-to-school-story-P1-vocab-1.mp3",
+          "audio/going-to-school-story-P1-vocab-2.mp3",
+          "audio/going-to-school-story-P1-vocab-3.mp3",
+          "audio/going-to-school-story-P1-vocab-4.mp3",
+          "audio/going-to-school-story-P1-vocab-5.mp3",
+          "audio/going-to-school-story-P1-vocab-6.mp3",
+          "audio/going-to-school-story-P1-vocab-7.mp3",
+          "audio/going-to-school-story-P1-vocab-8.mp3",
+          "audio/going-to-school-story-P1-vocab-9.mp3"
+        ],
+        "dialogue": [
+          "audio/going-to-school-story-P1-line-0.mp3",
+          "audio/going-to-school-story-P1-line-1.mp3",
+          "audio/going-to-school-story-P1-line-2.mp3",
+          "audio/going-to-school-story-P1-line-3.mp3",
+          "audio/going-to-school-story-P1-line-4.mp3",
+          "audio/going-to-school-story-P1-line-5.mp3",
+          "audio/going-to-school-story-P1-line-6.mp3",
+          "audio/going-to-school-story-P1-line-7.mp3",
+          "audio/going-to-school-story-P1-line-8.mp3",
+          "audio/going-to-school-story-P1-line-9.mp3",
+          "audio/going-to-school-story-P1-line-10.mp3",
+          "audio/going-to-school-story-P1-line-11.mp3"
+        ]
+      },
+      "P2": {
+        "vocab": [
+          "audio/going-to-school-story-P2-vocab-0.mp3",
+          "audio/going-to-school-story-P2-vocab-1.mp3",
+          "audio/going-to-school-story-P2-vocab-2.mp3",
+          "audio/going-to-school-story-P2-vocab-3.mp3",
+          "audio/going-to-school-story-P2-vocab-4.mp3",
+          "audio/going-to-school-story-P2-vocab-5.mp3",
+          "audio/going-to-school-story-P2-vocab-6.mp3",
+          "audio/going-to-school-story-P2-vocab-7.mp3",
+          "audio/going-to-school-story-P2-vocab-8.mp3",
+          "audio/going-to-school-story-P2-vocab-9.mp3",
+          "audio/going-to-school-story-P2-vocab-10.mp3",
+          "audio/going-to-school-story-P2-vocab-11.mp3"
+        ],
+        "dialogue": [
+          "audio/going-to-school-story-P2-line-0.mp3",
+          "audio/going-to-school-story-P2-line-1.mp3",
+          "audio/going-to-school-story-P2-line-2.mp3",
+          "audio/going-to-school-story-P2-line-3.mp3",
+          "audio/going-to-school-story-P2-line-4.mp3",
+          "audio/going-to-school-story-P2-line-5.mp3",
+          "audio/going-to-school-story-P2-line-6.mp3",
+          "audio/going-to-school-story-P2-line-7.mp3",
+          "audio/going-to-school-story-P2-line-8.mp3",
+          "audio/going-to-school-story-P2-line-9.mp3",
+          "audio/going-to-school-story-P2-line-10.mp3",
+          "audio/going-to-school-story-P2-line-11.mp3",
+          "audio/going-to-school-story-P2-line-12.mp3",
+          "audio/going-to-school-story-P2-line-13.mp3",
+          "audio/going-to-school-story-P2-line-14.mp3",
+          "audio/going-to-school-story-P2-line-15.mp3"
+        ]
+      }
     }
   },
   "playing-toys": {
-    "K3": {
-      "vocab": [],
-      "dialogue": []
+    "natural": {
+      "K3": {
+        "vocab": [
+          "audio/playing-toys-natural-K3-vocab-0.mp3",
+          "audio/playing-toys-natural-K3-vocab-1.mp3",
+          "audio/playing-toys-natural-K3-vocab-2.mp3",
+          "audio/playing-toys-natural-K3-vocab-3.mp3",
+          "audio/playing-toys-natural-K3-vocab-4.mp3",
+          "audio/playing-toys-natural-K3-vocab-5.mp3",
+          "audio/playing-toys-natural-K3-vocab-6.mp3",
+          "audio/playing-toys-natural-K3-vocab-7.mp3"
+        ],
+        "dialogue": [
+          "audio/playing-toys-natural-K3-line-0.mp3",
+          "audio/playing-toys-natural-K3-line-1.mp3",
+          "audio/playing-toys-natural-K3-line-2.mp3",
+          "audio/playing-toys-natural-K3-line-3.mp3",
+          "audio/playing-toys-natural-K3-line-4.mp3",
+          "audio/playing-toys-natural-K3-line-5.mp3",
+          "audio/playing-toys-natural-K3-line-6.mp3",
+          "audio/playing-toys-natural-K3-line-7.mp3"
+        ]
+      },
+      "P1": {
+        "vocab": [
+          "audio/playing-toys-natural-P1-vocab-0.mp3",
+          "audio/playing-toys-natural-P1-vocab-1.mp3",
+          "audio/playing-toys-natural-P1-vocab-2.mp3",
+          "audio/playing-toys-natural-P1-vocab-3.mp3",
+          "audio/playing-toys-natural-P1-vocab-4.mp3",
+          "audio/playing-toys-natural-P1-vocab-5.mp3",
+          "audio/playing-toys-natural-P1-vocab-6.mp3",
+          "audio/playing-toys-natural-P1-vocab-7.mp3",
+          "audio/playing-toys-natural-P1-vocab-8.mp3",
+          "audio/playing-toys-natural-P1-vocab-9.mp3"
+        ],
+        "dialogue": [
+          "audio/playing-toys-natural-P1-line-0.mp3",
+          "audio/playing-toys-natural-P1-line-1.mp3",
+          "audio/playing-toys-natural-P1-line-2.mp3",
+          "audio/playing-toys-natural-P1-line-3.mp3",
+          "audio/playing-toys-natural-P1-line-4.mp3",
+          "audio/playing-toys-natural-P1-line-5.mp3",
+          "audio/playing-toys-natural-P1-line-6.mp3",
+          "audio/playing-toys-natural-P1-line-7.mp3",
+          "audio/playing-toys-natural-P1-line-8.mp3",
+          "audio/playing-toys-natural-P1-line-9.mp3",
+          "audio/playing-toys-natural-P1-line-10.mp3",
+          "audio/playing-toys-natural-P1-line-11.mp3"
+        ]
+      },
+      "P2": {
+        "vocab": [
+          "audio/playing-toys-natural-P2-vocab-0.mp3",
+          "audio/playing-toys-natural-P2-vocab-1.mp3",
+          "audio/playing-toys-natural-P2-vocab-2.mp3",
+          "audio/playing-toys-natural-P2-vocab-3.mp3",
+          "audio/playing-toys-natural-P2-vocab-4.mp3",
+          "audio/playing-toys-natural-P2-vocab-5.mp3",
+          "audio/playing-toys-natural-P2-vocab-6.mp3",
+          "audio/playing-toys-natural-P2-vocab-7.mp3",
+          "audio/playing-toys-natural-P2-vocab-8.mp3",
+          "audio/playing-toys-natural-P2-vocab-9.mp3",
+          "audio/playing-toys-natural-P2-vocab-10.mp3",
+          "audio/playing-toys-natural-P2-vocab-11.mp3"
+        ],
+        "dialogue": [
+          "audio/playing-toys-natural-P2-line-0.mp3",
+          "audio/playing-toys-natural-P2-line-1.mp3",
+          "audio/playing-toys-natural-P2-line-2.mp3",
+          "audio/playing-toys-natural-P2-line-3.mp3",
+          "audio/playing-toys-natural-P2-line-4.mp3",
+          "audio/playing-toys-natural-P2-line-5.mp3",
+          "audio/playing-toys-natural-P2-line-6.mp3",
+          "audio/playing-toys-natural-P2-line-7.mp3",
+          "audio/playing-toys-natural-P2-line-8.mp3",
+          "audio/playing-toys-natural-P2-line-9.mp3",
+          "audio/playing-toys-natural-P2-line-10.mp3",
+          "audio/playing-toys-natural-P2-line-11.mp3",
+          "audio/playing-toys-natural-P2-line-12.mp3",
+          "audio/playing-toys-natural-P2-line-13.mp3",
+          "audio/playing-toys-natural-P2-line-14.mp3",
+          "audio/playing-toys-natural-P2-line-15.mp3"
+        ]
+      }
+    },
+    "story": {
+      "K3": {
+        "vocab": [
+          "audio/playing-toys-story-K3-vocab-0.mp3",
+          "audio/playing-toys-story-K3-vocab-1.mp3",
+          "audio/playing-toys-story-K3-vocab-2.mp3",
+          "audio/playing-toys-story-K3-vocab-3.mp3",
+          "audio/playing-toys-story-K3-vocab-4.mp3",
+          "audio/playing-toys-story-K3-vocab-5.mp3",
+          "audio/playing-toys-story-K3-vocab-6.mp3",
+          "audio/playing-toys-story-K3-vocab-7.mp3"
+        ],
+        "dialogue": [
+          "audio/playing-toys-story-K3-line-0.mp3",
+          "audio/playing-toys-story-K3-line-1.mp3",
+          "audio/playing-toys-story-K3-line-2.mp3",
+          "audio/playing-toys-story-K3-line-3.mp3",
+          "audio/playing-toys-story-K3-line-4.mp3",
+          "audio/playing-toys-story-K3-line-5.mp3",
+          "audio/playing-toys-story-K3-line-6.mp3",
+          "audio/playing-toys-story-K3-line-7.mp3"
+        ]
+      },
+      "P1": {
+        "vocab": [
+          "audio/playing-toys-story-P1-vocab-0.mp3",
+          "audio/playing-toys-story-P1-vocab-1.mp3",
+          "audio/playing-toys-story-P1-vocab-2.mp3",
+          "audio/playing-toys-story-P1-vocab-3.mp3",
+          "audio/playing-toys-story-P1-vocab-4.mp3",
+          "audio/playing-toys-story-P1-vocab-5.mp3",
+          "audio/playing-toys-story-P1-vocab-6.mp3",
+          "audio/playing-toys-story-P1-vocab-7.mp3",
+          "audio/playing-toys-story-P1-vocab-8.mp3",
+          "audio/playing-toys-story-P1-vocab-9.mp3"
+        ],
+        "dialogue": [
+          "audio/playing-toys-story-P1-line-0.mp3",
+          "audio/playing-toys-story-P1-line-1.mp3",
+          "audio/playing-toys-story-P1-line-2.mp3",
+          "audio/playing-toys-story-P1-line-3.mp3",
+          "audio/playing-toys-story-P1-line-4.mp3",
+          "audio/playing-toys-story-P1-line-5.mp3",
+          "audio/playing-toys-story-P1-line-6.mp3",
+          "audio/playing-toys-story-P1-line-7.mp3",
+          "audio/playing-toys-story-P1-line-8.mp3",
+          "audio/playing-toys-story-P1-line-9.mp3",
+          "audio/playing-toys-story-P1-line-10.mp3",
+          "audio/playing-toys-story-P1-line-11.mp3"
+        ]
+      },
+      "P2": {
+        "vocab": [
+          "audio/playing-toys-story-P2-vocab-0.mp3",
+          "audio/playing-toys-story-P2-vocab-1.mp3",
+          "audio/playing-toys-story-P2-vocab-2.mp3",
+          "audio/playing-toys-story-P2-vocab-3.mp3",
+          "audio/playing-toys-story-P2-vocab-4.mp3",
+          "audio/playing-toys-story-P2-vocab-5.mp3",
+          "audio/playing-toys-story-P2-vocab-6.mp3",
+          "audio/playing-toys-story-P2-vocab-7.mp3",
+          "audio/playing-toys-story-P2-vocab-8.mp3",
+          "audio/playing-toys-story-P2-vocab-9.mp3",
+          "audio/playing-toys-story-P2-vocab-10.mp3",
+          "audio/playing-toys-story-P2-vocab-11.mp3"
+        ],
+        "dialogue": [
+          "audio/playing-toys-story-P2-line-0.mp3",
+          "audio/playing-toys-story-P2-line-1.mp3",
+          "audio/playing-toys-story-P2-line-2.mp3",
+          "audio/playing-toys-story-P2-line-3.mp3",
+          "audio/playing-toys-story-P2-line-4.mp3",
+          "audio/playing-toys-story-P2-line-5.mp3",
+          "audio/playing-toys-story-P2-line-6.mp3",
+          "audio/playing-toys-story-P2-line-7.mp3",
+          "audio/playing-toys-story-P2-line-8.mp3",
+          "audio/playing-toys-story-P2-line-9.mp3",
+          "audio/playing-toys-story-P2-line-10.mp3",
+          "audio/playing-toys-story-P2-line-11.mp3",
+          "audio/playing-toys-story-P2-line-12.mp3",
+          "audio/playing-toys-story-P2-line-13.mp3",
+          "audio/playing-toys-story-P2-line-14.mp3",
+          "audio/playing-toys-story-P2-line-15.mp3"
+        ]
+      }
     }
   },
   "bath-time": {
-    "K3": {
-      "vocab": [],
-      "dialogue": []
+    "natural": {
+      "K3": {
+        "vocab": [
+          "audio/bath-time-natural-K3-vocab-0.mp3",
+          "audio/bath-time-natural-K3-vocab-1.mp3",
+          "audio/bath-time-natural-K3-vocab-2.mp3",
+          "audio/bath-time-natural-K3-vocab-3.mp3",
+          "audio/bath-time-natural-K3-vocab-4.mp3",
+          "audio/bath-time-natural-K3-vocab-5.mp3",
+          "audio/bath-time-natural-K3-vocab-6.mp3",
+          "audio/bath-time-natural-K3-vocab-7.mp3"
+        ],
+        "dialogue": [
+          "audio/bath-time-natural-K3-line-0.mp3",
+          "audio/bath-time-natural-K3-line-1.mp3",
+          "audio/bath-time-natural-K3-line-2.mp3",
+          "audio/bath-time-natural-K3-line-3.mp3",
+          "audio/bath-time-natural-K3-line-4.mp3",
+          "audio/bath-time-natural-K3-line-5.mp3",
+          "audio/bath-time-natural-K3-line-6.mp3",
+          "audio/bath-time-natural-K3-line-7.mp3"
+        ]
+      },
+      "P1": {
+        "vocab": [
+          "audio/bath-time-natural-P1-vocab-0.mp3",
+          "audio/bath-time-natural-P1-vocab-1.mp3",
+          "audio/bath-time-natural-P1-vocab-2.mp3",
+          "audio/bath-time-natural-P1-vocab-3.mp3",
+          "audio/bath-time-natural-P1-vocab-4.mp3",
+          "audio/bath-time-natural-P1-vocab-5.mp3",
+          "audio/bath-time-natural-P1-vocab-6.mp3",
+          "audio/bath-time-natural-P1-vocab-7.mp3",
+          "audio/bath-time-natural-P1-vocab-8.mp3",
+          "audio/bath-time-natural-P1-vocab-9.mp3"
+        ],
+        "dialogue": [
+          "audio/bath-time-natural-P1-line-0.mp3",
+          "audio/bath-time-natural-P1-line-1.mp3",
+          "audio/bath-time-natural-P1-line-2.mp3",
+          "audio/bath-time-natural-P1-line-3.mp3",
+          "audio/bath-time-natural-P1-line-4.mp3",
+          "audio/bath-time-natural-P1-line-5.mp3",
+          "audio/bath-time-natural-P1-line-6.mp3",
+          "audio/bath-time-natural-P1-line-7.mp3",
+          "audio/bath-time-natural-P1-line-8.mp3",
+          "audio/bath-time-natural-P1-line-9.mp3",
+          "audio/bath-time-natural-P1-line-10.mp3",
+          "audio/bath-time-natural-P1-line-11.mp3"
+        ]
+      },
+      "P2": {
+        "vocab": [
+          "audio/bath-time-natural-P2-vocab-0.mp3",
+          "audio/bath-time-natural-P2-vocab-1.mp3",
+          "audio/bath-time-natural-P2-vocab-2.mp3",
+          "audio/bath-time-natural-P2-vocab-3.mp3",
+          "audio/bath-time-natural-P2-vocab-4.mp3",
+          "audio/bath-time-natural-P2-vocab-5.mp3",
+          "audio/bath-time-natural-P2-vocab-6.mp3",
+          "audio/bath-time-natural-P2-vocab-7.mp3",
+          "audio/bath-time-natural-P2-vocab-8.mp3",
+          "audio/bath-time-natural-P2-vocab-9.mp3",
+          "audio/bath-time-natural-P2-vocab-10.mp3",
+          "audio/bath-time-natural-P2-vocab-11.mp3"
+        ],
+        "dialogue": [
+          "audio/bath-time-natural-P2-line-0.mp3",
+          "audio/bath-time-natural-P2-line-1.mp3",
+          "audio/bath-time-natural-P2-line-2.mp3",
+          "audio/bath-time-natural-P2-line-3.mp3",
+          "audio/bath-time-natural-P2-line-4.mp3",
+          "audio/bath-time-natural-P2-line-5.mp3",
+          "audio/bath-time-natural-P2-line-6.mp3",
+          "audio/bath-time-natural-P2-line-7.mp3",
+          "audio/bath-time-natural-P2-line-8.mp3",
+          "audio/bath-time-natural-P2-line-9.mp3",
+          "audio/bath-time-natural-P2-line-10.mp3",
+          "audio/bath-time-natural-P2-line-11.mp3",
+          "audio/bath-time-natural-P2-line-12.mp3",
+          "audio/bath-time-natural-P2-line-13.mp3",
+          "audio/bath-time-natural-P2-line-14.mp3",
+          "audio/bath-time-natural-P2-line-15.mp3"
+        ]
+      }
+    },
+    "story": {
+      "K3": {
+        "vocab": [
+          "audio/bath-time-story-K3-vocab-0.mp3",
+          "audio/bath-time-story-K3-vocab-1.mp3",
+          "audio/bath-time-story-K3-vocab-2.mp3",
+          "audio/bath-time-story-K3-vocab-3.mp3",
+          "audio/bath-time-story-K3-vocab-4.mp3",
+          "audio/bath-time-story-K3-vocab-5.mp3",
+          "audio/bath-time-story-K3-vocab-6.mp3",
+          "audio/bath-time-story-K3-vocab-7.mp3"
+        ],
+        "dialogue": [
+          "audio/bath-time-story-K3-line-0.mp3",
+          "audio/bath-time-story-K3-line-1.mp3",
+          "audio/bath-time-story-K3-line-2.mp3",
+          "audio/bath-time-story-K3-line-3.mp3",
+          "audio/bath-time-story-K3-line-4.mp3",
+          "audio/bath-time-story-K3-line-5.mp3",
+          "audio/bath-time-story-K3-line-6.mp3",
+          "audio/bath-time-story-K3-line-7.mp3"
+        ]
+      },
+      "P1": {
+        "vocab": [
+          "audio/bath-time-story-P1-vocab-0.mp3",
+          "audio/bath-time-story-P1-vocab-1.mp3",
+          "audio/bath-time-story-P1-vocab-2.mp3",
+          "audio/bath-time-story-P1-vocab-3.mp3",
+          "audio/bath-time-story-P1-vocab-4.mp3",
+          "audio/bath-time-story-P1-vocab-5.mp3",
+          "audio/bath-time-story-P1-vocab-6.mp3",
+          "audio/bath-time-story-P1-vocab-7.mp3",
+          "audio/bath-time-story-P1-vocab-8.mp3",
+          "audio/bath-time-story-P1-vocab-9.mp3"
+        ],
+        "dialogue": [
+          "audio/bath-time-story-P1-line-0.mp3",
+          "audio/bath-time-story-P1-line-1.mp3",
+          "audio/bath-time-story-P1-line-2.mp3",
+          "audio/bath-time-story-P1-line-3.mp3",
+          "audio/bath-time-story-P1-line-4.mp3",
+          "audio/bath-time-story-P1-line-5.mp3",
+          "audio/bath-time-story-P1-line-6.mp3",
+          "audio/bath-time-story-P1-line-7.mp3",
+          "audio/bath-time-story-P1-line-8.mp3",
+          "audio/bath-time-story-P1-line-9.mp3",
+          "audio/bath-time-story-P1-line-10.mp3",
+          "audio/bath-time-story-P1-line-11.mp3"
+        ]
+      },
+      "P2": {
+        "vocab": [
+          "audio/bath-time-story-P2-vocab-0.mp3",
+          "audio/bath-time-story-P2-vocab-1.mp3",
+          "audio/bath-time-story-P2-vocab-2.mp3",
+          "audio/bath-time-story-P2-vocab-3.mp3",
+          "audio/bath-time-story-P2-vocab-4.mp3",
+          "audio/bath-time-story-P2-vocab-5.mp3",
+          "audio/bath-time-story-P2-vocab-6.mp3",
+          "audio/bath-time-story-P2-vocab-7.mp3",
+          "audio/bath-time-story-P2-vocab-8.mp3",
+          "audio/bath-time-story-P2-vocab-9.mp3",
+          "audio/bath-time-story-P2-vocab-10.mp3",
+          "audio/bath-time-story-P2-vocab-11.mp3"
+        ],
+        "dialogue": [
+          "audio/bath-time-story-P2-line-0.mp3",
+          "audio/bath-time-story-P2-line-1.mp3",
+          "audio/bath-time-story-P2-line-2.mp3",
+          "audio/bath-time-story-P2-line-3.mp3",
+          "audio/bath-time-story-P2-line-4.mp3",
+          "audio/bath-time-story-P2-line-5.mp3",
+          "audio/bath-time-story-P2-line-6.mp3",
+          "audio/bath-time-story-P2-line-7.mp3",
+          "audio/bath-time-story-P2-line-8.mp3",
+          "audio/bath-time-story-P2-line-9.mp3",
+          "audio/bath-time-story-P2-line-10.mp3",
+          "audio/bath-time-story-P2-line-11.mp3",
+          "audio/bath-time-story-P2-line-12.mp3",
+          "audio/bath-time-story-P2-line-13.mp3",
+          "audio/bath-time-story-P2-line-14.mp3",
+          "audio/bath-time-story-P2-line-15.mp3"
+        ]
+      }
     }
   },
   "eating-fruit": {
-    "K3": {
-      "vocab": [],
-      "dialogue": []
+    "natural": {
+      "K3": {
+        "vocab": [
+          "audio/eating-fruit-natural-K3-vocab-0.mp3",
+          "audio/eating-fruit-natural-K3-vocab-1.mp3",
+          "audio/eating-fruit-natural-K3-vocab-2.mp3",
+          "audio/eating-fruit-natural-K3-vocab-3.mp3",
+          "audio/eating-fruit-natural-K3-vocab-4.mp3",
+          "audio/eating-fruit-natural-K3-vocab-5.mp3",
+          "audio/eating-fruit-natural-K3-vocab-6.mp3",
+          "audio/eating-fruit-natural-K3-vocab-7.mp3"
+        ],
+        "dialogue": [
+          "audio/eating-fruit-natural-K3-line-0.mp3",
+          "audio/eating-fruit-natural-K3-line-1.mp3",
+          "audio/eating-fruit-natural-K3-line-2.mp3",
+          "audio/eating-fruit-natural-K3-line-3.mp3",
+          "audio/eating-fruit-natural-K3-line-4.mp3",
+          "audio/eating-fruit-natural-K3-line-5.mp3",
+          "audio/eating-fruit-natural-K3-line-6.mp3",
+          "audio/eating-fruit-natural-K3-line-7.mp3"
+        ]
+      },
+      "P1": {
+        "vocab": [
+          "audio/eating-fruit-natural-P1-vocab-0.mp3",
+          "audio/eating-fruit-natural-P1-vocab-1.mp3",
+          "audio/eating-fruit-natural-P1-vocab-2.mp3",
+          "audio/eating-fruit-natural-P1-vocab-3.mp3",
+          "audio/eating-fruit-natural-P1-vocab-4.mp3",
+          "audio/eating-fruit-natural-P1-vocab-5.mp3",
+          "audio/eating-fruit-natural-P1-vocab-6.mp3",
+          "audio/eating-fruit-natural-P1-vocab-7.mp3",
+          "audio/eating-fruit-natural-P1-vocab-8.mp3",
+          "audio/eating-fruit-natural-P1-vocab-9.mp3"
+        ],
+        "dialogue": [
+          "audio/eating-fruit-natural-P1-line-0.mp3",
+          "audio/eating-fruit-natural-P1-line-1.mp3",
+          "audio/eating-fruit-natural-P1-line-2.mp3",
+          "audio/eating-fruit-natural-P1-line-3.mp3",
+          "audio/eating-fruit-natural-P1-line-4.mp3",
+          "audio/eating-fruit-natural-P1-line-5.mp3",
+          "audio/eating-fruit-natural-P1-line-6.mp3",
+          "audio/eating-fruit-natural-P1-line-7.mp3",
+          "audio/eating-fruit-natural-P1-line-8.mp3",
+          "audio/eating-fruit-natural-P1-line-9.mp3",
+          "audio/eating-fruit-natural-P1-line-10.mp3",
+          "audio/eating-fruit-natural-P1-line-11.mp3"
+        ]
+      },
+      "P2": {
+        "vocab": [
+          "audio/eating-fruit-natural-P2-vocab-0.mp3",
+          "audio/eating-fruit-natural-P2-vocab-1.mp3",
+          "audio/eating-fruit-natural-P2-vocab-2.mp3",
+          "audio/eating-fruit-natural-P2-vocab-3.mp3",
+          "audio/eating-fruit-natural-P2-vocab-4.mp3",
+          "audio/eating-fruit-natural-P2-vocab-5.mp3",
+          "audio/eating-fruit-natural-P2-vocab-6.mp3",
+          "audio/eating-fruit-natural-P2-vocab-7.mp3",
+          "audio/eating-fruit-natural-P2-vocab-8.mp3",
+          "audio/eating-fruit-natural-P2-vocab-9.mp3",
+          "audio/eating-fruit-natural-P2-vocab-10.mp3",
+          "audio/eating-fruit-natural-P2-vocab-11.mp3"
+        ],
+        "dialogue": [
+          "audio/eating-fruit-natural-P2-line-0.mp3",
+          "audio/eating-fruit-natural-P2-line-1.mp3",
+          "audio/eating-fruit-natural-P2-line-2.mp3",
+          "audio/eating-fruit-natural-P2-line-3.mp3",
+          "audio/eating-fruit-natural-P2-line-4.mp3",
+          "audio/eating-fruit-natural-P2-line-5.mp3",
+          "audio/eating-fruit-natural-P2-line-6.mp3",
+          "audio/eating-fruit-natural-P2-line-7.mp3",
+          "audio/eating-fruit-natural-P2-line-8.mp3",
+          "audio/eating-fruit-natural-P2-line-9.mp3",
+          "audio/eating-fruit-natural-P2-line-10.mp3",
+          "audio/eating-fruit-natural-P2-line-11.mp3",
+          "audio/eating-fruit-natural-P2-line-12.mp3",
+          "audio/eating-fruit-natural-P2-line-13.mp3",
+          "audio/eating-fruit-natural-P2-line-14.mp3",
+          "audio/eating-fruit-natural-P2-line-15.mp3"
+        ]
+      }
+    },
+    "story": {
+      "K3": {
+        "vocab": [
+          "audio/eating-fruit-story-K3-vocab-0.mp3",
+          "audio/eating-fruit-story-K3-vocab-1.mp3",
+          "audio/eating-fruit-story-K3-vocab-2.mp3",
+          "audio/eating-fruit-story-K3-vocab-3.mp3",
+          "audio/eating-fruit-story-K3-vocab-4.mp3",
+          "audio/eating-fruit-story-K3-vocab-5.mp3",
+          "audio/eating-fruit-story-K3-vocab-6.mp3",
+          "audio/eating-fruit-story-K3-vocab-7.mp3"
+        ],
+        "dialogue": [
+          "audio/eating-fruit-story-K3-line-0.mp3",
+          "audio/eating-fruit-story-K3-line-1.mp3",
+          "audio/eating-fruit-story-K3-line-2.mp3",
+          "audio/eating-fruit-story-K3-line-3.mp3",
+          "audio/eating-fruit-story-K3-line-4.mp3",
+          "audio/eating-fruit-story-K3-line-5.mp3",
+          "audio/eating-fruit-story-K3-line-6.mp3",
+          "audio/eating-fruit-story-K3-line-7.mp3"
+        ]
+      },
+      "P1": {
+        "vocab": [
+          "audio/eating-fruit-story-P1-vocab-0.mp3",
+          "audio/eating-fruit-story-P1-vocab-1.mp3",
+          "audio/eating-fruit-story-P1-vocab-2.mp3",
+          "audio/eating-fruit-story-P1-vocab-3.mp3",
+          "audio/eating-fruit-story-P1-vocab-4.mp3",
+          "audio/eating-fruit-story-P1-vocab-5.mp3",
+          "audio/eating-fruit-story-P1-vocab-6.mp3",
+          "audio/eating-fruit-story-P1-vocab-7.mp3",
+          "audio/eating-fruit-story-P1-vocab-8.mp3",
+          "audio/eating-fruit-story-P1-vocab-9.mp3"
+        ],
+        "dialogue": [
+          "audio/eating-fruit-story-P1-line-0.mp3",
+          "audio/eating-fruit-story-P1-line-1.mp3",
+          "audio/eating-fruit-story-P1-line-2.mp3",
+          "audio/eating-fruit-story-P1-line-3.mp3",
+          "audio/eating-fruit-story-P1-line-4.mp3",
+          "audio/eating-fruit-story-P1-line-5.mp3",
+          "audio/eating-fruit-story-P1-line-6.mp3",
+          "audio/eating-fruit-story-P1-line-7.mp3",
+          "audio/eating-fruit-story-P1-line-8.mp3",
+          "audio/eating-fruit-story-P1-line-9.mp3",
+          "audio/eating-fruit-story-P1-line-10.mp3",
+          "audio/eating-fruit-story-P1-line-11.mp3"
+        ]
+      },
+      "P2": {
+        "vocab": [
+          "audio/eating-fruit-story-P2-vocab-0.mp3",
+          "audio/eating-fruit-story-P2-vocab-1.mp3",
+          "audio/eating-fruit-story-P2-vocab-2.mp3",
+          "audio/eating-fruit-story-P2-vocab-3.mp3",
+          "audio/eating-fruit-story-P2-vocab-4.mp3",
+          "audio/eating-fruit-story-P2-vocab-5.mp3",
+          "audio/eating-fruit-story-P2-vocab-6.mp3",
+          "audio/eating-fruit-story-P2-vocab-7.mp3",
+          "audio/eating-fruit-story-P2-vocab-8.mp3",
+          "audio/eating-fruit-story-P2-vocab-9.mp3",
+          "audio/eating-fruit-story-P2-vocab-10.mp3",
+          "audio/eating-fruit-story-P2-vocab-11.mp3"
+        ],
+        "dialogue": [
+          "audio/eating-fruit-story-P2-line-0.mp3",
+          "audio/eating-fruit-story-P2-line-1.mp3",
+          "audio/eating-fruit-story-P2-line-2.mp3",
+          "audio/eating-fruit-story-P2-line-3.mp3",
+          "audio/eating-fruit-story-P2-line-4.mp3",
+          "audio/eating-fruit-story-P2-line-5.mp3",
+          "audio/eating-fruit-story-P2-line-6.mp3",
+          "audio/eating-fruit-story-P2-line-7.mp3",
+          "audio/eating-fruit-story-P2-line-8.mp3",
+          "audio/eating-fruit-story-P2-line-9.mp3",
+          "audio/eating-fruit-story-P2-line-10.mp3",
+          "audio/eating-fruit-story-P2-line-11.mp3",
+          "audio/eating-fruit-story-P2-line-12.mp3",
+          "audio/eating-fruit-story-P2-line-13.mp3",
+          "audio/eating-fruit-story-P2-line-14.mp3",
+          "audio/eating-fruit-story-P2-line-15.mp3"
+        ]
+      }
     }
   },
   "at-the-park": {
-    "K3": {
-      "vocab": [],
-      "dialogue": []
+    "natural": {
+      "K3": {
+        "vocab": [
+          "audio/at-the-park-natural-K3-vocab-0.mp3",
+          "audio/at-the-park-natural-K3-vocab-1.mp3",
+          "audio/at-the-park-natural-K3-vocab-2.mp3",
+          "audio/at-the-park-natural-K3-vocab-3.mp3",
+          "audio/at-the-park-natural-K3-vocab-4.mp3",
+          "audio/at-the-park-natural-K3-vocab-5.mp3",
+          "audio/at-the-park-natural-K3-vocab-6.mp3",
+          "audio/at-the-park-natural-K3-vocab-7.mp3"
+        ],
+        "dialogue": [
+          "audio/at-the-park-natural-K3-line-0.mp3",
+          "audio/at-the-park-natural-K3-line-1.mp3",
+          "audio/at-the-park-natural-K3-line-2.mp3",
+          "audio/at-the-park-natural-K3-line-3.mp3",
+          "audio/at-the-park-natural-K3-line-4.mp3",
+          "audio/at-the-park-natural-K3-line-5.mp3",
+          "audio/at-the-park-natural-K3-line-6.mp3",
+          "audio/at-the-park-natural-K3-line-7.mp3"
+        ]
+      },
+      "P1": {
+        "vocab": [
+          "audio/at-the-park-natural-P1-vocab-0.mp3",
+          "audio/at-the-park-natural-P1-vocab-1.mp3",
+          "audio/at-the-park-natural-P1-vocab-2.mp3",
+          "audio/at-the-park-natural-P1-vocab-3.mp3",
+          "audio/at-the-park-natural-P1-vocab-4.mp3",
+          "audio/at-the-park-natural-P1-vocab-5.mp3",
+          "audio/at-the-park-natural-P1-vocab-6.mp3",
+          "audio/at-the-park-natural-P1-vocab-7.mp3",
+          "audio/at-the-park-natural-P1-vocab-8.mp3",
+          "audio/at-the-park-natural-P1-vocab-9.mp3"
+        ],
+        "dialogue": [
+          "audio/at-the-park-natural-P1-line-0.mp3",
+          "audio/at-the-park-natural-P1-line-1.mp3",
+          "audio/at-the-park-natural-P1-line-2.mp3",
+          "audio/at-the-park-natural-P1-line-3.mp3",
+          "audio/at-the-park-natural-P1-line-4.mp3",
+          "audio/at-the-park-natural-P1-line-5.mp3",
+          "audio/at-the-park-natural-P1-line-6.mp3",
+          "audio/at-the-park-natural-P1-line-7.mp3",
+          "audio/at-the-park-natural-P1-line-8.mp3",
+          "audio/at-the-park-natural-P1-line-9.mp3",
+          "audio/at-the-park-natural-P1-line-10.mp3",
+          "audio/at-the-park-natural-P1-line-11.mp3"
+        ]
+      },
+      "P2": {
+        "vocab": [
+          "audio/at-the-park-natural-P2-vocab-0.mp3",
+          "audio/at-the-park-natural-P2-vocab-1.mp3",
+          "audio/at-the-park-natural-P2-vocab-2.mp3",
+          "audio/at-the-park-natural-P2-vocab-3.mp3",
+          "audio/at-the-park-natural-P2-vocab-4.mp3",
+          "audio/at-the-park-natural-P2-vocab-5.mp3",
+          "audio/at-the-park-natural-P2-vocab-6.mp3",
+          "audio/at-the-park-natural-P2-vocab-7.mp3",
+          "audio/at-the-park-natural-P2-vocab-8.mp3",
+          "audio/at-the-park-natural-P2-vocab-9.mp3",
+          "audio/at-the-park-natural-P2-vocab-10.mp3",
+          "audio/at-the-park-natural-P2-vocab-11.mp3"
+        ],
+        "dialogue": [
+          "audio/at-the-park-natural-P2-line-0.mp3",
+          "audio/at-the-park-natural-P2-line-1.mp3",
+          "audio/at-the-park-natural-P2-line-2.mp3",
+          "audio/at-the-park-natural-P2-line-3.mp3",
+          "audio/at-the-park-natural-P2-line-4.mp3",
+          "audio/at-the-park-natural-P2-line-5.mp3",
+          "audio/at-the-park-natural-P2-line-6.mp3",
+          "audio/at-the-park-natural-P2-line-7.mp3",
+          "audio/at-the-park-natural-P2-line-8.mp3",
+          "audio/at-the-park-natural-P2-line-9.mp3",
+          "audio/at-the-park-natural-P2-line-10.mp3",
+          "audio/at-the-park-natural-P2-line-11.mp3",
+          "audio/at-the-park-natural-P2-line-12.mp3",
+          "audio/at-the-park-natural-P2-line-13.mp3",
+          "audio/at-the-park-natural-P2-line-14.mp3",
+          "audio/at-the-park-natural-P2-line-15.mp3"
+        ]
+      }
+    },
+    "story": {
+      "K3": {
+        "vocab": [
+          "audio/at-the-park-story-K3-vocab-0.mp3",
+          "audio/at-the-park-story-K3-vocab-1.mp3",
+          "audio/at-the-park-story-K3-vocab-2.mp3",
+          "audio/at-the-park-story-K3-vocab-3.mp3",
+          "audio/at-the-park-story-K3-vocab-4.mp3",
+          "audio/at-the-park-story-K3-vocab-5.mp3",
+          "audio/at-the-park-story-K3-vocab-6.mp3",
+          "audio/at-the-park-story-K3-vocab-7.mp3"
+        ],
+        "dialogue": [
+          "audio/at-the-park-story-K3-line-0.mp3",
+          "audio/at-the-park-story-K3-line-1.mp3",
+          "audio/at-the-park-story-K3-line-2.mp3",
+          "audio/at-the-park-story-K3-line-3.mp3",
+          "audio/at-the-park-story-K3-line-4.mp3",
+          "audio/at-the-park-story-K3-line-5.mp3",
+          "audio/at-the-park-story-K3-line-6.mp3",
+          "audio/at-the-park-story-K3-line-7.mp3"
+        ]
+      },
+      "P1": {
+        "vocab": [
+          "audio/at-the-park-story-P1-vocab-0.mp3",
+          "audio/at-the-park-story-P1-vocab-1.mp3",
+          "audio/at-the-park-story-P1-vocab-2.mp3",
+          "audio/at-the-park-story-P1-vocab-3.mp3",
+          "audio/at-the-park-story-P1-vocab-4.mp3",
+          "audio/at-the-park-story-P1-vocab-5.mp3",
+          "audio/at-the-park-story-P1-vocab-6.mp3",
+          "audio/at-the-park-story-P1-vocab-7.mp3",
+          "audio/at-the-park-story-P1-vocab-8.mp3",
+          "audio/at-the-park-story-P1-vocab-9.mp3"
+        ],
+        "dialogue": [
+          "audio/at-the-park-story-P1-line-0.mp3",
+          "audio/at-the-park-story-P1-line-1.mp3",
+          "audio/at-the-park-story-P1-line-2.mp3",
+          "audio/at-the-park-story-P1-line-3.mp3",
+          "audio/at-the-park-story-P1-line-4.mp3",
+          "audio/at-the-park-story-P1-line-5.mp3",
+          "audio/at-the-park-story-P1-line-6.mp3",
+          "audio/at-the-park-story-P1-line-7.mp3",
+          "audio/at-the-park-story-P1-line-8.mp3",
+          "audio/at-the-park-story-P1-line-9.mp3",
+          "audio/at-the-park-story-P1-line-10.mp3",
+          "audio/at-the-park-story-P1-line-11.mp3"
+        ]
+      },
+      "P2": {
+        "vocab": [
+          "audio/at-the-park-story-P2-vocab-0.mp3",
+          "audio/at-the-park-story-P2-vocab-1.mp3",
+          "audio/at-the-park-story-P2-vocab-2.mp3",
+          "audio/at-the-park-story-P2-vocab-3.mp3",
+          "audio/at-the-park-story-P2-vocab-4.mp3",
+          "audio/at-the-park-story-P2-vocab-5.mp3",
+          "audio/at-the-park-story-P2-vocab-6.mp3",
+          "audio/at-the-park-story-P2-vocab-7.mp3",
+          "audio/at-the-park-story-P2-vocab-8.mp3",
+          "audio/at-the-park-story-P2-vocab-9.mp3",
+          "audio/at-the-park-story-P2-vocab-10.mp3",
+          "audio/at-the-park-story-P2-vocab-11.mp3"
+        ],
+        "dialogue": [
+          "audio/at-the-park-story-P2-line-0.mp3",
+          "audio/at-the-park-story-P2-line-1.mp3",
+          "audio/at-the-park-story-P2-line-2.mp3",
+          "audio/at-the-park-story-P2-line-3.mp3",
+          "audio/at-the-park-story-P2-line-4.mp3",
+          "audio/at-the-park-story-P2-line-5.mp3",
+          "audio/at-the-park-story-P2-line-6.mp3",
+          "audio/at-the-park-story-P2-line-7.mp3",
+          "audio/at-the-park-story-P2-line-8.mp3",
+          "audio/at-the-park-story-P2-line-9.mp3",
+          "audio/at-the-park-story-P2-line-10.mp3",
+          "audio/at-the-park-story-P2-line-11.mp3",
+          "audio/at-the-park-story-P2-line-12.mp3",
+          "audio/at-the-park-story-P2-line-13.mp3",
+          "audio/at-the-park-story-P2-line-14.mp3",
+          "audio/at-the-park-story-P2-line-15.mp3"
+        ]
+      }
     }
   },
   "reading-book": {
-    "K3": {
-      "vocab": [],
-      "dialogue": []
+    "natural": {
+      "K3": {
+        "vocab": [
+          "audio/reading-book-natural-K3-vocab-0.mp3",
+          "audio/reading-book-natural-K3-vocab-1.mp3",
+          "audio/reading-book-natural-K3-vocab-2.mp3",
+          "audio/reading-book-natural-K3-vocab-3.mp3",
+          "audio/reading-book-natural-K3-vocab-4.mp3",
+          "audio/reading-book-natural-K3-vocab-5.mp3",
+          "audio/reading-book-natural-K3-vocab-6.mp3",
+          "audio/reading-book-natural-K3-vocab-7.mp3"
+        ],
+        "dialogue": [
+          "audio/reading-book-natural-K3-line-0.mp3",
+          "audio/reading-book-natural-K3-line-1.mp3",
+          "audio/reading-book-natural-K3-line-2.mp3",
+          "audio/reading-book-natural-K3-line-3.mp3",
+          "audio/reading-book-natural-K3-line-4.mp3",
+          "audio/reading-book-natural-K3-line-5.mp3",
+          "audio/reading-book-natural-K3-line-6.mp3",
+          "audio/reading-book-natural-K3-line-7.mp3"
+        ]
+      },
+      "P1": {
+        "vocab": [
+          "audio/reading-book-natural-P1-vocab-0.mp3",
+          "audio/reading-book-natural-P1-vocab-1.mp3",
+          "audio/reading-book-natural-P1-vocab-2.mp3",
+          "audio/reading-book-natural-P1-vocab-3.mp3",
+          "audio/reading-book-natural-P1-vocab-4.mp3",
+          "audio/reading-book-natural-P1-vocab-5.mp3",
+          "audio/reading-book-natural-P1-vocab-6.mp3",
+          "audio/reading-book-natural-P1-vocab-7.mp3",
+          "audio/reading-book-natural-P1-vocab-8.mp3",
+          "audio/reading-book-natural-P1-vocab-9.mp3"
+        ],
+        "dialogue": [
+          "audio/reading-book-natural-P1-line-0.mp3",
+          "audio/reading-book-natural-P1-line-1.mp3",
+          "audio/reading-book-natural-P1-line-2.mp3",
+          "audio/reading-book-natural-P1-line-3.mp3",
+          "audio/reading-book-natural-P1-line-4.mp3",
+          "audio/reading-book-natural-P1-line-5.mp3",
+          "audio/reading-book-natural-P1-line-6.mp3",
+          "audio/reading-book-natural-P1-line-7.mp3",
+          "audio/reading-book-natural-P1-line-8.mp3",
+          "audio/reading-book-natural-P1-line-9.mp3",
+          "audio/reading-book-natural-P1-line-10.mp3",
+          "audio/reading-book-natural-P1-line-11.mp3"
+        ]
+      },
+      "P2": {
+        "vocab": [
+          "audio/reading-book-natural-P2-vocab-0.mp3",
+          "audio/reading-book-natural-P2-vocab-1.mp3",
+          "audio/reading-book-natural-P2-vocab-2.mp3",
+          "audio/reading-book-natural-P2-vocab-3.mp3",
+          "audio/reading-book-natural-P2-vocab-4.mp3",
+          "audio/reading-book-natural-P2-vocab-5.mp3",
+          "audio/reading-book-natural-P2-vocab-6.mp3",
+          "audio/reading-book-natural-P2-vocab-7.mp3",
+          "audio/reading-book-natural-P2-vocab-8.mp3",
+          "audio/reading-book-natural-P2-vocab-9.mp3",
+          "audio/reading-book-natural-P2-vocab-10.mp3",
+          "audio/reading-book-natural-P2-vocab-11.mp3"
+        ],
+        "dialogue": [
+          "audio/reading-book-natural-P2-line-0.mp3",
+          "audio/reading-book-natural-P2-line-1.mp3",
+          "audio/reading-book-natural-P2-line-2.mp3",
+          "audio/reading-book-natural-P2-line-3.mp3",
+          "audio/reading-book-natural-P2-line-4.mp3",
+          "audio/reading-book-natural-P2-line-5.mp3",
+          "audio/reading-book-natural-P2-line-6.mp3",
+          "audio/reading-book-natural-P2-line-7.mp3",
+          "audio/reading-book-natural-P2-line-8.mp3",
+          "audio/reading-book-natural-P2-line-9.mp3",
+          "audio/reading-book-natural-P2-line-10.mp3",
+          "audio/reading-book-natural-P2-line-11.mp3",
+          "audio/reading-book-natural-P2-line-12.mp3",
+          "audio/reading-book-natural-P2-line-13.mp3",
+          "audio/reading-book-natural-P2-line-14.mp3",
+          "audio/reading-book-natural-P2-line-15.mp3"
+        ]
+      }
+    },
+    "story": {
+      "K3": {
+        "vocab": [
+          "audio/reading-book-story-K3-vocab-0.mp3",
+          "audio/reading-book-story-K3-vocab-1.mp3",
+          "audio/reading-book-story-K3-vocab-2.mp3",
+          "audio/reading-book-story-K3-vocab-3.mp3",
+          "audio/reading-book-story-K3-vocab-4.mp3",
+          "audio/reading-book-story-K3-vocab-5.mp3",
+          "audio/reading-book-story-K3-vocab-6.mp3",
+          "audio/reading-book-story-K3-vocab-7.mp3"
+        ],
+        "dialogue": [
+          "audio/reading-book-story-K3-line-0.mp3",
+          "audio/reading-book-story-K3-line-1.mp3",
+          "audio/reading-book-story-K3-line-2.mp3",
+          "audio/reading-book-story-K3-line-3.mp3",
+          "audio/reading-book-story-K3-line-4.mp3",
+          "audio/reading-book-story-K3-line-5.mp3",
+          "audio/reading-book-story-K3-line-6.mp3",
+          "audio/reading-book-story-K3-line-7.mp3"
+        ]
+      },
+      "P1": {
+        "vocab": [
+          "audio/reading-book-story-P1-vocab-0.mp3",
+          "audio/reading-book-story-P1-vocab-1.mp3",
+          "audio/reading-book-story-P1-vocab-2.mp3",
+          "audio/reading-book-story-P1-vocab-3.mp3",
+          "audio/reading-book-story-P1-vocab-4.mp3",
+          "audio/reading-book-story-P1-vocab-5.mp3",
+          "audio/reading-book-story-P1-vocab-6.mp3",
+          "audio/reading-book-story-P1-vocab-7.mp3",
+          "audio/reading-book-story-P1-vocab-8.mp3",
+          "audio/reading-book-story-P1-vocab-9.mp3"
+        ],
+        "dialogue": [
+          "audio/reading-book-story-P1-line-0.mp3",
+          "audio/reading-book-story-P1-line-1.mp3",
+          "audio/reading-book-story-P1-line-2.mp3",
+          "audio/reading-book-story-P1-line-3.mp3",
+          "audio/reading-book-story-P1-line-4.mp3",
+          "audio/reading-book-story-P1-line-5.mp3",
+          "audio/reading-book-story-P1-line-6.mp3",
+          "audio/reading-book-story-P1-line-7.mp3",
+          "audio/reading-book-story-P1-line-8.mp3",
+          "audio/reading-book-story-P1-line-9.mp3",
+          "audio/reading-book-story-P1-line-10.mp3",
+          "audio/reading-book-story-P1-line-11.mp3"
+        ]
+      },
+      "P2": {
+        "vocab": [
+          "audio/reading-book-story-P2-vocab-0.mp3",
+          "audio/reading-book-story-P2-vocab-1.mp3",
+          "audio/reading-book-story-P2-vocab-2.mp3",
+          "audio/reading-book-story-P2-vocab-3.mp3",
+          "audio/reading-book-story-P2-vocab-4.mp3",
+          "audio/reading-book-story-P2-vocab-5.mp3",
+          "audio/reading-book-story-P2-vocab-6.mp3",
+          "audio/reading-book-story-P2-vocab-7.mp3",
+          "audio/reading-book-story-P2-vocab-8.mp3",
+          "audio/reading-book-story-P2-vocab-9.mp3",
+          "audio/reading-book-story-P2-vocab-10.mp3",
+          "audio/reading-book-story-P2-vocab-11.mp3"
+        ],
+        "dialogue": [
+          "audio/reading-book-story-P2-line-0.mp3",
+          "audio/reading-book-story-P2-line-1.mp3",
+          "audio/reading-book-story-P2-line-2.mp3",
+          "audio/reading-book-story-P2-line-3.mp3",
+          "audio/reading-book-story-P2-line-4.mp3",
+          "audio/reading-book-story-P2-line-5.mp3",
+          "audio/reading-book-story-P2-line-6.mp3",
+          "audio/reading-book-story-P2-line-7.mp3",
+          "audio/reading-book-story-P2-line-8.mp3",
+          "audio/reading-book-story-P2-line-9.mp3",
+          "audio/reading-book-story-P2-line-10.mp3",
+          "audio/reading-book-story-P2-line-11.mp3",
+          "audio/reading-book-story-P2-line-12.mp3",
+          "audio/reading-book-story-P2-line-13.mp3",
+          "audio/reading-book-story-P2-line-14.mp3",
+          "audio/reading-book-story-P2-line-15.mp3"
+        ]
+      }
     }
   },
   "bedtime": {
-    "K3": {
-      "vocab": [],
-      "dialogue": []
+    "natural": {
+      "K3": {
+        "vocab": [
+          "audio/bedtime-natural-K3-vocab-0.mp3",
+          "audio/bedtime-natural-K3-vocab-1.mp3",
+          "audio/bedtime-natural-K3-vocab-2.mp3",
+          "audio/bedtime-natural-K3-vocab-3.mp3",
+          "audio/bedtime-natural-K3-vocab-4.mp3",
+          "audio/bedtime-natural-K3-vocab-5.mp3",
+          "audio/bedtime-natural-K3-vocab-6.mp3",
+          "audio/bedtime-natural-K3-vocab-7.mp3"
+        ],
+        "dialogue": [
+          "audio/bedtime-natural-K3-line-0.mp3",
+          "audio/bedtime-natural-K3-line-1.mp3",
+          "audio/bedtime-natural-K3-line-2.mp3",
+          "audio/bedtime-natural-K3-line-3.mp3",
+          "audio/bedtime-natural-K3-line-4.mp3",
+          "audio/bedtime-natural-K3-line-5.mp3",
+          "audio/bedtime-natural-K3-line-6.mp3",
+          "audio/bedtime-natural-K3-line-7.mp3"
+        ]
+      },
+      "P1": {
+        "vocab": [
+          "audio/bedtime-natural-P1-vocab-0.mp3",
+          "audio/bedtime-natural-P1-vocab-1.mp3",
+          "audio/bedtime-natural-P1-vocab-2.mp3",
+          "audio/bedtime-natural-P1-vocab-3.mp3",
+          "audio/bedtime-natural-P1-vocab-4.mp3",
+          "audio/bedtime-natural-P1-vocab-5.mp3",
+          "audio/bedtime-natural-P1-vocab-6.mp3",
+          "audio/bedtime-natural-P1-vocab-7.mp3",
+          "audio/bedtime-natural-P1-vocab-8.mp3",
+          "audio/bedtime-natural-P1-vocab-9.mp3"
+        ],
+        "dialogue": [
+          "audio/bedtime-natural-P1-line-0.mp3",
+          "audio/bedtime-natural-P1-line-1.mp3",
+          "audio/bedtime-natural-P1-line-2.mp3",
+          "audio/bedtime-natural-P1-line-3.mp3",
+          "audio/bedtime-natural-P1-line-4.mp3",
+          "audio/bedtime-natural-P1-line-5.mp3",
+          "audio/bedtime-natural-P1-line-6.mp3",
+          "audio/bedtime-natural-P1-line-7.mp3",
+          "audio/bedtime-natural-P1-line-8.mp3",
+          "audio/bedtime-natural-P1-line-9.mp3",
+          "audio/bedtime-natural-P1-line-10.mp3",
+          "audio/bedtime-natural-P1-line-11.mp3"
+        ]
+      },
+      "P2": {
+        "vocab": [
+          "audio/bedtime-natural-P2-vocab-0.mp3",
+          "audio/bedtime-natural-P2-vocab-1.mp3",
+          "audio/bedtime-natural-P2-vocab-2.mp3",
+          "audio/bedtime-natural-P2-vocab-3.mp3",
+          "audio/bedtime-natural-P2-vocab-4.mp3",
+          "audio/bedtime-natural-P2-vocab-5.mp3",
+          "audio/bedtime-natural-P2-vocab-6.mp3",
+          "audio/bedtime-natural-P2-vocab-7.mp3",
+          "audio/bedtime-natural-P2-vocab-8.mp3",
+          "audio/bedtime-natural-P2-vocab-9.mp3",
+          "audio/bedtime-natural-P2-vocab-10.mp3",
+          "audio/bedtime-natural-P2-vocab-11.mp3"
+        ],
+        "dialogue": [
+          "audio/bedtime-natural-P2-line-0.mp3",
+          "audio/bedtime-natural-P2-line-1.mp3",
+          "audio/bedtime-natural-P2-line-2.mp3",
+          "audio/bedtime-natural-P2-line-3.mp3",
+          "audio/bedtime-natural-P2-line-4.mp3",
+          "audio/bedtime-natural-P2-line-5.mp3",
+          "audio/bedtime-natural-P2-line-6.mp3",
+          "audio/bedtime-natural-P2-line-7.mp3",
+          "audio/bedtime-natural-P2-line-8.mp3",
+          "audio/bedtime-natural-P2-line-9.mp3",
+          "audio/bedtime-natural-P2-line-10.mp3",
+          "audio/bedtime-natural-P2-line-11.mp3",
+          "audio/bedtime-natural-P2-line-12.mp3",
+          "audio/bedtime-natural-P2-line-13.mp3",
+          "audio/bedtime-natural-P2-line-14.mp3",
+          "audio/bedtime-natural-P2-line-15.mp3"
+        ]
+      }
+    },
+    "story": {
+      "K3": {
+        "vocab": [
+          "audio/bedtime-story-K3-vocab-0.mp3",
+          "audio/bedtime-story-K3-vocab-1.mp3",
+          "audio/bedtime-story-K3-vocab-2.mp3",
+          "audio/bedtime-story-K3-vocab-3.mp3",
+          "audio/bedtime-story-K3-vocab-4.mp3",
+          "audio/bedtime-story-K3-vocab-5.mp3",
+          "audio/bedtime-story-K3-vocab-6.mp3",
+          "audio/bedtime-story-K3-vocab-7.mp3"
+        ],
+        "dialogue": [
+          "audio/bedtime-story-K3-line-0.mp3",
+          "audio/bedtime-story-K3-line-1.mp3",
+          "audio/bedtime-story-K3-line-2.mp3",
+          "audio/bedtime-story-K3-line-3.mp3",
+          "audio/bedtime-story-K3-line-4.mp3",
+          "audio/bedtime-story-K3-line-5.mp3",
+          "audio/bedtime-story-K3-line-6.mp3",
+          "audio/bedtime-story-K3-line-7.mp3"
+        ]
+      },
+      "P1": {
+        "vocab": [
+          "audio/bedtime-story-P1-vocab-0.mp3",
+          "audio/bedtime-story-P1-vocab-1.mp3",
+          "audio/bedtime-story-P1-vocab-2.mp3",
+          "audio/bedtime-story-P1-vocab-3.mp3",
+          "audio/bedtime-story-P1-vocab-4.mp3",
+          "audio/bedtime-story-P1-vocab-5.mp3",
+          "audio/bedtime-story-P1-vocab-6.mp3",
+          "audio/bedtime-story-P1-vocab-7.mp3",
+          "audio/bedtime-story-P1-vocab-8.mp3",
+          "audio/bedtime-story-P1-vocab-9.mp3"
+        ],
+        "dialogue": [
+          "audio/bedtime-story-P1-line-0.mp3",
+          "audio/bedtime-story-P1-line-1.mp3",
+          "audio/bedtime-story-P1-line-2.mp3",
+          "audio/bedtime-story-P1-line-3.mp3",
+          "audio/bedtime-story-P1-line-4.mp3",
+          "audio/bedtime-story-P1-line-5.mp3",
+          "audio/bedtime-story-P1-line-6.mp3",
+          "audio/bedtime-story-P1-line-7.mp3",
+          "audio/bedtime-story-P1-line-8.mp3",
+          "audio/bedtime-story-P1-line-9.mp3",
+          "audio/bedtime-story-P1-line-10.mp3",
+          "audio/bedtime-story-P1-line-11.mp3"
+        ]
+      },
+      "P2": {
+        "vocab": [
+          "audio/bedtime-story-P2-vocab-0.mp3",
+          "audio/bedtime-story-P2-vocab-1.mp3",
+          "audio/bedtime-story-P2-vocab-2.mp3",
+          "audio/bedtime-story-P2-vocab-3.mp3",
+          "audio/bedtime-story-P2-vocab-4.mp3",
+          "audio/bedtime-story-P2-vocab-5.mp3",
+          "audio/bedtime-story-P2-vocab-6.mp3",
+          "audio/bedtime-story-P2-vocab-7.mp3",
+          "audio/bedtime-story-P2-vocab-8.mp3",
+          "audio/bedtime-story-P2-vocab-9.mp3",
+          "audio/bedtime-story-P2-vocab-10.mp3",
+          "audio/bedtime-story-P2-vocab-11.mp3"
+        ],
+        "dialogue": [
+          "audio/bedtime-story-P2-line-0.mp3",
+          "audio/bedtime-story-P2-line-1.mp3",
+          "audio/bedtime-story-P2-line-2.mp3",
+          "audio/bedtime-story-P2-line-3.mp3",
+          "audio/bedtime-story-P2-line-4.mp3",
+          "audio/bedtime-story-P2-line-5.mp3",
+          "audio/bedtime-story-P2-line-6.mp3",
+          "audio/bedtime-story-P2-line-7.mp3",
+          "audio/bedtime-story-P2-line-8.mp3",
+          "audio/bedtime-story-P2-line-9.mp3",
+          "audio/bedtime-story-P2-line-10.mp3",
+          "audio/bedtime-story-P2-line-11.mp3",
+          "audio/bedtime-story-P2-line-12.mp3",
+          "audio/bedtime-story-P2-line-13.mp3",
+          "audio/bedtime-story-P2-line-14.mp3",
+          "audio/bedtime-story-P2-line-15.mp3"
+        ]
+      }
     }
   }
 }
