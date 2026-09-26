@@ -124,7 +124,7 @@ function render(){
   document.getElementById('sTitleZh').textContent = s.title_zh;
   var img = document.getElementById('sImg');
   img.style.display='block';
-  img.src = 'images/'+s.id+'.png';
+  img.src = 'images/'+s.id+'.jpg';
   var m = manifest[s.id] || {vocab:[], dialogue:[]};
   var vg = document.getElementById('vocabGrid'); vg.innerHTML='';
   s.vocab.forEach(function(v,i){
