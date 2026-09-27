@@ -1,13 +1,7 @@
 #!/usr/bin/env python3
-# build: batched-kore-leda-autochain-r2
-"""BATCHED GENERATION: Gemini-TTS for all scenes/modes/levels.
-Daughter=Kore (energetic child), Mama=Leda (warm young mother).
-- Incremental: skips existing files (safe to re-run).
-- Rate-limited: small pause between calls to avoid 429.
-- Fault-tolerant: a failed clip is logged and skipped, never crashes the run.
-- Batched: generates up to BATCH_LIMIT new clips per run, then commits.
-- Writes remaining.txt (number of clips still missing) so the workflow can
-  auto-chain the next batch until everything is done."""
+# build: patch-missing-8
+"""PATCH MODE: Gemini-TTS, incremental (only fills missing clips).
+Daughter=Kore, Mama=Leda. Stronger retry (12x) to recover flaky 'parts' failures."""
 import os, json, base64, requests, time, struct
 from google.oauth2 import service_account
 from google.auth.transport.requests import Request
@@ -18,7 +12,7 @@ MODEL = "gemini-2.5-flash-tts"
 ENDPOINT = f"https://aiplatform.googleapis.com/v1/projects/{PROJECT}/locations/{REGION}/publishers/google/models/{MODEL}:generateContent"
 
 BATCH_LIMIT = int(os.environ.get("BATCH_LIMIT", "200"))
-PAUSE = float(os.environ.get("TTS_PAUSE", "1.2"))
+PAUSE = float(os.environ.get("TTS_PAUSE", "1.5"))
 
 sa_info = json.loads(os.environ["GCP_SA_KEY"])
 creds = service_account.Credentials.from_service_account_info(
@@ -61,18 +55,23 @@ def synth(text, who):
         },
     }
     headers = {"Authorization": f"Bearer {TOKEN}", "Content-Type": "application/json"}
-    for attempt in range(6):
+    last = ""
+    for attempt in range(12):
         try:
             r = requests.post(ENDPOINT, json=body, headers=headers, timeout=90)
-        except Exception:
-            time.sleep(5 * (attempt + 1)); continue
+        except Exception as e:
+            last = str(e)[:80]; time.sleep(4 * (attempt + 1)); continue
         if r.status_code == 200:
-            b64 = r.json()["candidates"][0]["content"]["parts"][0]["inlineData"]["data"]
-            return base64.b64decode(b64)
+            try:
+                b64 = r.json()["candidates"][0]["content"]["parts"][0]["inlineData"]["data"]
+                return base64.b64decode(b64)
+            except Exception as e:
+                # 'parts' missing / empty audio — retry with a short wait
+                last = "empty-parts"; time.sleep(3 * (attempt + 1)); continue
         if r.status_code in (429, 500, 503):
-            time.sleep(6 * (attempt + 1)); continue
+            last = str(r.status_code); time.sleep(6 * (attempt + 1)); continue
         raise RuntimeError(f"TTS {r.status_code}: {r.text[:200]}")
-    raise RuntimeError("rate-limited after retries")
+    raise RuntimeError("failed after 12 retries: " + last)
 
 generated = 0
 failed = []
@@ -82,7 +81,7 @@ budget_left = BATCH_LIMIT
 def gen_file(fn, text, who):
     global generated, budget_left, missing
     if os.path.exists(fn) and os.path.getsize(fn) > 1000:
-        return  # already done
+        return
     if budget_left <= 0:
         missing += 1
         return
@@ -94,7 +93,7 @@ def gen_file(fn, text, who):
         budget_left -= 1
         time.sleep(PAUSE)
     except Exception as e:
-        failed.append((fn, str(e)[:80]))
+        failed.append((fn, str(e)[:100]))
         missing += 1
 
 manifest = {}
@@ -135,4 +134,4 @@ print(f"Total clips: {total}")
 if missing == 0:
     print("ALL DONE.")
 else:
-    print(f"{missing} clips remain — workflow will auto-chain next batch.")
+    print(f"{missing} clips still missing.")
