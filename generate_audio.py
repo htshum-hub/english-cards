@@ -1,30 +1,19 @@
 #!/usr/bin/env python3
-# build: patch-missing-8
-"""PATCH MODE: Gemini-TTS, incremental (only fills missing clips).
-Daughter=Kore, Mama=Leda. Stronger retry (12x) to recover flaky 'parts' failures."""
+# build: chirp3-patch-6
+"""PATCH MODE (Chirp3-HD): fill the 6 sentences Gemini persistently fails on.
+Uses standard texttospeech API + API key (stable, no empty-parts).
+Voices match: Girl=en-US-Chirp3-HD-Kore, Mama=en-US-Chirp3-HD-Leda.
+Incremental: only generates missing .wav files."""
 import os, json, base64, requests, time, struct
-from google.oauth2 import service_account
-from google.auth.transport.requests import Request
 
-PROJECT = "english-cards-tts"
-REGION = "global"
-MODEL = "gemini-2.5-flash-tts"
-ENDPOINT = f"https://aiplatform.googleapis.com/v1/projects/{PROJECT}/locations/{REGION}/publishers/google/models/{MODEL}:generateContent"
+API_KEY = os.environ["TTS_API_KEY"]
+URL = f"https://texttospeech.googleapis.com/v1/text:synthesize?key={API_KEY}"
 
-BATCH_LIMIT = int(os.environ.get("BATCH_LIMIT", "200"))
-PAUSE = float(os.environ.get("TTS_PAUSE", "1.5"))
-
-sa_info = json.loads(os.environ["GCP_SA_KEY"])
-creds = service_account.Credentials.from_service_account_info(
-    sa_info, scopes=["https://www.googleapis.com/auth/cloud-platform"])
-creds.refresh(Request())
-TOKEN = creds.token
-TOKEN_TS = time.time()
-
-VOICES = {
-    "Mama": {"name": "Leda", "prompt": "Read aloud in a warm, gentle, young-mother tone, soft and loving."},
-    "Girl": {"name": "Kore", "prompt": "Read aloud in an energetic, cheerful, playful young child girl tone."},
+VOICE_NAME = {
+    "Mama": "en-US-Chirp3-HD-Leda",
+    "Girl": "en-US-Chirp3-HD-Kore",
 }
+SPEAKING_RATE = 0.9
 
 with open("scenes.json", encoding="utf-8") as f:
     data = json.load(f)
@@ -33,65 +22,38 @@ MODES = data.get("modes", ["natural", "story"])
 
 os.makedirs("audio", exist_ok=True)
 
-def refresh_token():
-    global TOKEN, TOKEN_TS
-    if time.time() - TOKEN_TS > 2400:
-        creds.refresh(Request())
-        TOKEN = creds.token
-        TOKEN_TS = time.time()
-
-def pcm_to_wav(pcm, rate=24000):
-    n = len(pcm)
-    return b'RIFF' + struct.pack('<I', 36 + n) + b'WAVEfmt ' + struct.pack('<IHHIIHH', 16, 1, 1, rate, rate * 2, 2, 16) + b'data' + struct.pack('<I', n) + pcm
+def pcm_to_wav_or_mp3(content_b64):
+    return base64.b64decode(content_b64)
 
 def synth(text, who):
-    refresh_token()
-    v = VOICES.get(who, VOICES["Mama"])
     body = {
-        "contents": [{"role": "user", "parts": [{"text": v["prompt"] + " " + text}]}],
-        "generationConfig": {
-            "responseModalities": ["AUDIO"],
-            "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": v["name"]}}},
-        },
+        "input": {"text": text},
+        "voice": {"languageCode": "en-US", "name": VOICE_NAME.get(who, VOICE_NAME["Girl"])},
+        "audioConfig": {"audioEncoding": "LINEAR16", "speakingRate": SPEAKING_RATE},
     }
-    headers = {"Authorization": f"Bearer {TOKEN}", "Content-Type": "application/json"}
-    last = ""
-    for attempt in range(12):
-        try:
-            r = requests.post(ENDPOINT, json=body, headers=headers, timeout=90)
-        except Exception as e:
-            last = str(e)[:80]; time.sleep(4 * (attempt + 1)); continue
+    for attempt in range(5):
+        r = requests.post(URL, json=body, timeout=90)
         if r.status_code == 200:
-            try:
-                b64 = r.json()["candidates"][0]["content"]["parts"][0]["inlineData"]["data"]
-                return base64.b64decode(b64)
-            except Exception as e:
-                # 'parts' missing / empty audio — retry with a short wait
-                last = "empty-parts"; time.sleep(3 * (attempt + 1)); continue
+            return base64.b64decode(r.json()["audioContent"])
         if r.status_code in (429, 500, 503):
-            last = str(r.status_code); time.sleep(6 * (attempt + 1)); continue
-        raise RuntimeError(f"TTS {r.status_code}: {r.text[:200]}")
-    raise RuntimeError("failed after 12 retries: " + last)
+            time.sleep(3 * (attempt + 1)); continue
+        raise RuntimeError(f"TTS {r.status_code}: {r.text[:300]}")
+    raise RuntimeError("failed after retries")
 
 generated = 0
 failed = []
 missing = 0
-budget_left = BATCH_LIMIT
 
 def gen_file(fn, text, who):
-    global generated, budget_left, missing
+    global generated, missing
     if os.path.exists(fn) and os.path.getsize(fn) > 1000:
         return
-    if budget_left <= 0:
-        missing += 1
-        return
     try:
-        pcm = synth(text, who)
+        wav = synth(text, who)
         with open(fn, "wb") as out:
-            out.write(pcm_to_wav(pcm))
+            out.write(wav)
         generated += 1
-        budget_left -= 1
-        time.sleep(PAUSE)
+        time.sleep(0.5)
     except Exception as e:
         failed.append((fn, str(e)[:100]))
         missing += 1
@@ -123,15 +85,11 @@ for scene in data["scenes"]:
 
 with open("manifest.json", "w", encoding="utf-8") as f:
     json.dump(manifest, f, ensure_ascii=False, indent=2)
-
 with open("remaining.txt", "w") as f:
     f.write(str(missing))
 
-print(f"This run generated {generated} new clips. Failed: {len(failed)}. Still missing: {missing}")
+print(f"This run generated {generated} new clips (Chirp3-HD). Failed: {len(failed)}. Still missing: {missing}")
 for x in failed[:10]:
     print("  FAIL", x)
 print(f"Total clips: {total}")
-if missing == 0:
-    print("ALL DONE.")
-else:
-    print(f"{missing} clips still missing.")
+print("ALL DONE." if missing == 0 else f"{missing} still missing.")
